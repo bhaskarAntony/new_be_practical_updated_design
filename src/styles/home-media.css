@@ -1,0 +1,25 @@
+@media (max-width:528px){
+    .custom-carousel{
+        align-items: flex-start;
+        min-height: fit-content;
+        padding: 30px 10px;
+        padding-bottom: 10%;
+        text-align: center;
+    }
+    .carousel-footer{
+        justify-content: center;
+    }
+    .carousal-heading{
+        font-size: 2.6rem;
+    }
+    .carousel-body-text{
+        font-size: 1.2rem;
+    }
+    .carousel-footer .join-btn, .carousel-footer .book-btn{
+        font-size: 0.8rem;
+    }
+    .quote-container{
+        padding: 10px;
+    }
+
+}

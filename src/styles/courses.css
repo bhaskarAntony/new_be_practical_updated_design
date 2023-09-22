@@ -1,0 +1,75 @@
+:root{
+    --main-color:rgb(240 0 55/1);
+    --main-light-color:rgb(252 244 245/1);
+    --white-color:#fff;
+    --black-color:#000;
+}
+* course tabs  */
+.full-screen-tabs {
+    display: flex;
+    flex-direction: column;
+    min-height: fit-content;
+    background-color: var(--white-color); /* Background color for the full-screen container */
+    box-sizing: border-box;
+  }
+  .main-nav{
+    display: flex;
+    min-width: 100% !important;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    border-top: 1px solid #c8c7c7;
+    padding:  5px 10px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .full-screen-tabs .nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white-color);
+    flex-flow: row nowrap;
+    overflow: auto;
+    border: none;
+
+  }
+  .apply-btn{
+    border: none;
+    padding: 8px 10px;
+    color: var(--white-color);
+    background-color: var(--main-color);
+    border-radius: 5px;
+    letter-spacing: 1.5px;
+    height: fit-content;
+    width: 150px;
+  }
+.full-screen-tabs .nav-item{
+    min-width: fit-content;
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+@media (max-width:768px){
+    .full-screen-tabs .nav-item{
+        width: fit-content;
+    }
+}
+.full-screen-tabs .nav-link{
+    color: var(--black-color);
+    width: fit-content;
+}
+.full-screen-tabs .nav-link{
+    font-size: 1rem !important;
+}
+.full-screen-tabs .nav-link:hover{
+    background-color: transparent;
+    border: none; /* Change to your desired background color */
+    color: var(--main-color)!important; /* Change to your desired text color */
+    border-bottom: 2px solid var(--main-color) !important;
+}
+.full-screen-tabs .nav-link.active {
+    background-color: transparent;
+    border: none; /* Change to your desired background color */
+    color: var(--main-color)!important; /* Change to your desired text color */
+    border-bottom: 2px solid var(--main-color) !important;
+    font-weight: 600;
+  }

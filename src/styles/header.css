@@ -1,0 +1,92 @@
+:root{
+    --main-color:rgb(240 0 55/1);
+    --white-color:#fff;
+    --black-color:#000;
+}
+
+.navbar-nav .nav-link {
+    color: var(--black-color);
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    font-weight: 500;
+  }
+  .bi-list{
+    color: var(--white-color) !important;
+    font-size: 1.4em;
+  }
+  .nav-apply-btn{
+    border: 1px solid var(--main-color) !important;
+    padding: 10px;
+    background: transparent;
+    border-radius: 5px;
+    color: var(--main-color);
+    font-weight: 600;
+  }
+  .navbar-nav .nav-link:hover{
+    color: var(--main-color);
+  }
+  .dropend .dropdown-toggle {
+    color:var(--main-color);
+    margin: 0 !important;
+  }
+  .dropdown-item{
+    padding: 15px !important;
+  }
+  .dropdown-item:hover {
+    background-color: var(--main-color)!important;
+    color: var(--white-color) !important;
+  }
+  .dropdown .dropdown-menu {
+    display: none;
+    padding: 0;
+    border: none;
+  }
+  .dropdown:hover > .dropdown-menu,
+  .dropend:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0.125em;
+    margin-left: 0.125em;
+  }
+  @media screen and (min-width: 769px) {
+    .dropend:hover > .dropdown-menu {
+      position: absolute;
+      top: 0;
+      left: 100%;
+    }
+    .dropend .dropdown-toggle {
+      margin-left: 0.5em;
+    }
+
+  }
+  nav{
+    background-color: var(--white-color);
+    gap:30px !important;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+  }
+  header{
+    position: sticky !important;
+    top: 0 !important;
+    background-color: var(--white-color);
+    z-index: 100;
+  }
+  .list-group-item{
+    padding: 0 !important;
+  }
+  @media(max-width:769px){
+    nav{
+      background-color: var(--main-color);
+    }
+    .navbar-nav .nav-link{
+      color: var(--white-color);
+    }
+    .navbar-nav .nav-link:hover{
+      color: #d4d3d3 !important;
+    }
+    .dropdown-toggle{
+      color: var(--main-color) !important;
+    }
+    .navbar-brand{
+      color: var(--white-color) !important;
+    }
+  }

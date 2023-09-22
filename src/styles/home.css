@@ -1,0 +1,179 @@
+:root{
+    --main-color:rgb(240 0 55/1);
+    --main-light-color:rgb(252 244 245/1);
+    --white-color:#fff;
+    --black-color:#000;
+    --tw-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color);
+    --tw-shadow-color: rgba(240,0,55,.2);
+    --tw-shadow: var(--tw-shadow-colored);
+}
+.banner-heading{
+  width: fit-content;
+  background: url(https://www.almabetter.com/_next/static/media/section-title-underline-decoration.25fa90ef.svg) no-repeat bottom left;
+  padding: 50px;
+  padding-bottom: 15px !important;
+}
+/* Styling for the custom carousel and indicators */
+.custom-carousel {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    line-height: 2;
+  }
+  
+  .custom-indicators {
+    position: absolute;
+    bottom: 20px; /* Adjust the bottom position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc; /* Inactive indicator color */
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .indicator.active {
+    background-color: var(--main-color)/* Active indicator color */
+  }
+  .carousel-indicators, .carousel-control-next-icon, .carousel-control-prev-icon{
+    display: none !important;
+  }
+
+  /* carousel box design  */
+  .carousel-footer{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+  .carousel-footer .join-btn, .carousel-footer .book-btn, .enrol-btn{
+        border: none;
+        background: var(--main-color) !important;
+        box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow) !important;
+        font-size: 1.5rem;
+        color: var(--white-color);
+        border-radius: 5px;
+  }
+  .enrol-btn{
+    border: 2px solid var(--main-color) !important;
+    color: var(--main-color);
+    background-color: transparent !important;
+  }
+  .enrol-btn:hover{
+    background-color: var(--main-color) !important;
+    color: var(--white-color);
+  }
+  /* .carousel-footer .book-btn{
+    border: 2px solid var(--main-color) !important;
+    background: transparent !important;
+    color: var(--main-color);
+}
+.book-btn:hover{
+    background: var(--main-color) !important;
+    color: var(--white-color);
+} */
+.carousal-heading{
+    font-size: 3.5rem;
+}
+.carousel-body-text{
+    font-size: 1.3rem;
+}
+.main-text{
+    color: var(--main-color);
+}
+.home-right img{
+    width: 100%;
+}
+.register{
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+
+}
+.register::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(45deg, #ffffff82, #ffffff53,#b9b9b92f,#fff, #fff);
+  background-size: 200% 200%;
+  animation: before 2s linear infinite;
+  transform: skew(45deg);
+  z-index: -1;
+  
+
+}
+
+@keyframes before{
+  0%{
+      transform: translateX(-100%) skew(45deg);
+  }
+  100%{
+    transform: translateX(100%) skew(45deg);
+  }
+}
+.register-container-home .form-control{
+  padding: 18px;
+  background-color: transparent;
+}
+.register-container-home .form-label{
+  color: var(--main-color);
+}
+.register-container-home .form-group{
+  margin-top: 20px !important;
+}
+.register-btn .join-btn{
+  height: fit-content;
+}
+.all-company-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  background-color: #fff;
+}
+.all-company-card img{
+  width: 80px;
+  height: 80px;
+}
+.quote-container{
+  padding: 10%;
+  border-radius: 10px;
+  background-color: var(--white-color);
+}
+.quote-inner{
+  background: var(--main-light-color);
+  padding: 10px;
+}
+.writer img{
+  width: 100%;
+  border-radius: 100px;
+}
+.writer small{
+  color: var(--main-color);
+}
+.quote-inner p{
+  color: #434343;
+}
+.quote-right{
+  padding: 10px;
+  background-color: var(--white-color);
+  border-radius: 10px;
+}

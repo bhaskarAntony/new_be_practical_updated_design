@@ -1,0 +1,34 @@
+:root{
+    --main-color:rgb(240 0 55/1);
+    --main-light-color:rgb(252 244 245/1);
+    --white-color:#fff;
+    --black-color:#000;
+      --dim-black:rgb(18 18 18/1);
+}
+.companies{
+    background-color: var(--main-light-color);
+    min-height: 200px;
+    padding: 50px;
+}
+.main-company-container{
+    padding: 6% !important;
+}
+.companies-brands-container{
+    min-height: 100% !important;
+    background-color: transparent;
+    overflow: hidden;
+}
+.companies-brands-container img{
+    width: 100%;
+    object-fit: cover !important;
+}
+.companies-brands-container img:hover{
+    transform: scale(1.2);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+@media (max-width:768px){
+    .main-company-container{
+        padding: 10px !important;
+    }
+}
