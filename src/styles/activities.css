@@ -12,6 +12,9 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    letter-spacing: -1px;
+    font-weight: 600;
+    line-height: 44px;
 }
 .collapse-card{
     background: var(--main-light-color);
