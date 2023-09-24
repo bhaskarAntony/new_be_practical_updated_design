@@ -20,3 +20,14 @@
 .training-card .card-body p{
     color: #5b5959;
 }
+@media (max-width:768px){
+    .training-card{
+        min-height: fit-content;
+        /* display: flex; */
+    }
+    .training-card img{
+        width: 100%;
+        /* height: 80px; */
+        gap: 20px;
+    }
+}

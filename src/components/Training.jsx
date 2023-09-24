@@ -37,14 +37,19 @@ function Training() {
                     {training.map((item, index) => (
                         <div className="col-12 col-md-6 col-lg-3" key={index}>
                             <div className="training-card mb-3" data-aos="zoom-in-down">
-                                <div className="header">
-                                    <img src={item.icon} alt="" />
-                                </div>
-                                <div className="card-body">
+                                <div className="row">
+                                    <div className="col-lg-12 col-md-12 col-sm-2 col-2">
+                                    <div className="header">
+                                    <img src={item.icon} alt="" className='img-fluid'/>
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-12 col-md-12 col-sm-10 col-10">
+                                    <div className="card-body">
                                     <h4>{item.heading}</h4>
                                     <p>{item.description}</p>
+                                    </div>
+                                    </div>
                                 </div>
-                                <div className="card-footer"></div>
                             </div>
                         </div>
                     ))}
