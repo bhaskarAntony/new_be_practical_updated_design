@@ -37,7 +37,8 @@
         margin-top: 10px !important;
       }
       .banner-heading{
-        padding: 5px;
+        padding: 30px 5px;
+        font-size: 1.2em;
       }
 
 }
