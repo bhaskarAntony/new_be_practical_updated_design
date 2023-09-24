@@ -1,0 +1,50 @@
+:root{
+    --main-color:rgb(240 0 55/1);
+    --main-light-color:rgb(252 244 245/1);
+    --white-color:#fff;
+    --black-color:#000;
+      --dim-black:rgb(18 18 18/1);
+}
+
+.container-tab{
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    position: sticky !important;
+    position: -webkit-sticky !important;
+    top: 100px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    background-color: #fff;
+    overflow: auto;
+    flex-flow: row wrap;
+}
+.container-tab ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+}
+.container-tab ul li a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #000;
+    padding: 10px;
+}
+.container-tab li:hover a{
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+@media (max-width:768px){
+    .container-tab .register-btn{
+        display: none;
+    } 
+    .container-tab{
+        padding: 5px;
+    }
+    .container-tab ul li a{
+        font-size: 1em;
+    }
+}

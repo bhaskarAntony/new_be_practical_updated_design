@@ -54,7 +54,7 @@ function Adwantages() {
         AOS.init(); // Initialize AOS
       }, []);
   return (
-    <section>
+    <section id="adwantages">
       <div className="adwantages-container container-fluid p-lg-5 text-center">
         <h2 className="banner-heading text-white p-4" data-aos="fade-up">100% Job Guarantee Courses</h2>
         <p className="text-white p-3 fs-5" data-aos="fade-up">

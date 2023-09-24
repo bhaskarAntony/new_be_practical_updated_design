@@ -5,7 +5,7 @@ import AOS from 'aos';
 var courses = [
     {
         id:1,
-        name: "MERN Fullstack",
+        name: "Complete Fullstack",
         tag:"Trending",
         duration: "4.5 Months",
         trainer: "...",
@@ -17,7 +17,7 @@ var courses = [
     },
     {
         id:2,
-        name: "Java Fullstack",
+        name: "MERN  Fullstack",
         tag:"Trending",
         duration: "4.5 Months",
         trainer: "...",
@@ -25,17 +25,6 @@ var courses = [
         ratedStudents: "465",
         rating:"4.5",
         icon: "https://cdn-icons-png.flaticon.com/128/1183/1183669.png",
-        image: "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-        id:3,
-        name: "Python Fullstack",
-        duration: "4.5 Months",
-        trainer: "...",
-        ratedStudents: "465",
-        rating:"4.5",
-        languages: ["html", "css", "Bootstrap", "Javascript", "React Js", "NodeJs", "Express JS", "MongoDB"],
-        icon: "https://cdn-icons-png.flaticon.com/128/5968/5968350.png",
         image: "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {

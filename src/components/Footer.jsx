@@ -9,7 +9,7 @@ function Footer() {
     <>
     <div className="footer-wave ">
     </div>
-    <section className="footer_container container-fluid">
+    <section className="footer_container container-fluid" id="footer">
     <div className="row">
         <div className="col-12 cl-md-12 col-lg-3 ">
            <div className="left">

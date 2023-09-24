@@ -1,0 +1,45 @@
+:root{
+    --main-color:rgb(240 0 55/1);
+    --main-light-color:rgb(252 244 245/1);
+    --white-color:#fff;
+    --black-color:#000;
+    --tw-shadow: 0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color);
+    --tw-shadow-color: rgba(240,0,55,.2);
+    --tw-shadow: var(--tw-shadow-colored);
+    --gold:radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    --dim-black:rgb(18 18 18/1);
+    --card-bg:rgb(54 54 54/1);
+}
+.elite{
+    background-color: var(--dim-black) ;
+    padding: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: s;
+    gap: 50px;
+    align-items: center;
+}
+.elite-card {
+    text-align: center;
+    padding: 20px;
+    min-height: 180px;
+    background: var(--gold);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.elite-card [class*="bi-"]{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.elite-card h4{
+    font-weight: bolder;
+}
+.elite button{
+    width: fit-content;
+}
+.elite .register-btn:hover{
+    background: var(--gold) !important;
+    transition: 0.5s;
+}

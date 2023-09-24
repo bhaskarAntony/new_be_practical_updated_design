@@ -6,14 +6,14 @@ function Header() {
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark p-3">
   <div class="container-fluid">
-    <a class="navbar-brand fw-bold text-black fs-3" href="/">Be Practical</a>
+  <a class="navbar-brand" href="/"> <img src="https://be-practical.com/images/Be-logo.png" alt="" /></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <i class="bi bi-list"></i>
     </button>
     <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 list-group">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 list-group  d-flex justify-content-center w-100">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Home</a>
+          <a class="nav-link" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -66,7 +66,7 @@ function Header() {
         </li>
       </ul>
        
-        <button class="nav-apply-btn" type="button">Apply Now</button>
+        <button class="nav-apply-btn w-25" type="button">Apply Now</button>
     </div>
   </div>
 </nav>

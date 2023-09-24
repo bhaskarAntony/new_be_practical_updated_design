@@ -13,6 +13,9 @@ useEffect(() => {
         <div key={index} className='course-single-card'  data-aos="flip-right">
           <div className="course-single-card-header">
            <img src={item.image} alt="" />
+           {/* <div className="course-single-card-header-curve">
+            <button className="register-btn">Register Now</button>
+           </div> */}
           </div>
           <ul className="list-group">
             <li className="list-group-item">

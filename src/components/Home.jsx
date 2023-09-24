@@ -10,11 +10,34 @@ import Feedback from './Feedback';
 import Adwantages from './Adwantages';
 import StudentsPlaced from './StudentsPlaced';
 import AOS from 'aos';
+import Skills from './Skills';
+import Elite from './Elite';
+import Bot from './Bot';
+import ChatBotContainer from './ChatBotContainer';
+import DialogModel from './DialogModel';
+import bg from '../images/website home section.svg'
+import YoutubeVideos from '../components/YoutubeVideos'
 
 function Home() {
+
+
   useEffect(() => {
     AOS.init(); // Initialize AOS
   }, []);
+
+  //model open logic 
+  const [showModal, setShowModal] = useState(true);
+
+  const handleCloseModal = () => setShowModal(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShowModal(true);
+    }, 1 * 60 * 1000); // 5 minutes
+
+    return () => clearInterval(interval);
+  }, []);
+
     const [index, setIndex] = useState(0);
     const [paused, setPaused] = useState(false);
     const [key, setKey] = useState('tab1'); // Initialize with the active tab key
@@ -42,7 +65,8 @@ function Home() {
         if (!paused) {
           setIndex((prevIndex) => (prevIndex + 1) % numberOfSlides);
         }
-      }, 3000); // Adjust the autoplay interval (in milliseconds) as needed
+      }, 3000);
+       // Adjust the autoplay interval (in milliseconds) as needed
   
       return () => {
         clearInterval(interval);
@@ -52,6 +76,7 @@ function Home() {
     const numberOfSlides = 3; // Replace with the actual number of slides
   return (
     <div>
+       <DialogModel show={showModal} handleClose={handleCloseModal} />
              <section className="home container-fluid">
         <div className="row">
             <div className="col-12 col-md-12 col-lg-6">
@@ -75,7 +100,7 @@ function Home() {
           <Carousel.Item>
           <div className="carousal-text">
             <h1 className="carousal-heading" data-aos="fade-up">
-            High Paid Salaries & Continuous <span className='main-text'>Career Growth</span>
+            Be practical's Job Oriented Training <span className='main-text'>Join Now</span>
             </h1>
             <div className="carousel-body">
                 <p className='carousel-body-text' data-aos="fade-up">Build skills with courses, certificates, and degrees online from world-class universities and companies.</p>
@@ -89,7 +114,7 @@ function Home() {
           <Carousel.Item>
           <div className="carousal-text">
             <h1 className="carousal-heading" data-aos="fade-up">
-            High Paid Salaries & Continuous <span className='main-text'>Career Growth</span>
+            After Course Completion Get Industry recognized <span className='main-text'>certificate</span>
             </h1>
             <div className="carousel-body">
                 <p className='carousel-body-text'>Build skills with courses, certificates, and degrees online from world-class universities and companies.</p>
@@ -114,7 +139,38 @@ function Home() {
             </div>
             <div className="col-12 col-md-12 col-lg-6">
                 <div className="home-right">
-                    <img src="https://educrat-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fhome-4%2Fmasthead%2F1.png&w=640&q=75" alt="" />
+                    <img src={bg} alt="" />
+                   {/* <div className="home-image-container">
+                   <div className="home-image1">
+                      <img src="https://images.pexels.com/photos/4467687/pexels-photo-4467687.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                   <div className="scroll-text-home">
+                   <marquee behavior="scroll" direction="left">Bhaskar Antony Placed At Google</marquee>
+                   </div>
+                    </div>
+                    <div className="home-image1">
+                      <img src="https://images.pexels.com/photos/3178818/pexels-photo-3178818.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
+                      <div className="scroll-text-home">
+                   <marquee behavior="scroll" direction="left">Bhaskar Antony Placed At Google</marquee>
+                   </div>
+                    </div>
+                   </div>
+                   <div className="home-image-container">
+                   <div className="home-image1">
+                      <img src="https://images.pexels.com/photos/4226122/pexels-photo-4226122.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
+                      <div className="scroll-text-home">
+                   <marquee behavior="scroll" direction="left">Bhaskar Antony Placed At Google</marquee>
+                   </div>
+                    </div>
+                    <div className="home-image1">
+                      <img src="https://images.pexels.com/photos/4065158/pexels-photo-4065158.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
+                      <div className="scroll-text-home">
+                   <marquee behavior="scroll" direction="left">Bhaskar Antony Placed At Google</marquee>
+                   </div>
+                    </div>
+                   </div> */}
+                   {/* <div className="star-container">
+                   <i class="bi bi-star-fill"></i>
+                   </div> */}
                 </div>
             </div>
         </div>
@@ -163,8 +219,8 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-sm-12 col-md-2 col-lg-2 register-btn carousel-footer  mt-5">
-              <button className='join-btn w-100 p-3' data-aos="fade-up">Join Now</button>
+            <div className="col-12 col-sm-12 col-md-2 col-lg-2 mt-5">
+              <button className='register-btn text-center  p-3 w-100' data-aos="fade-up">Join Now</button>
             </div>
           </div>
           </div>
@@ -172,6 +228,7 @@ function Home() {
         </div>
        </section>
       <Courses/>
+      <Elite/>
       <Training/>
        <Companies/>
       <Activities/>
@@ -199,7 +256,7 @@ function Home() {
                     </div>
                     <div className="col-12 col-md-12 col-lg-6">
                         <div className="quote-right tex-center p-5">
-                            <h3 data-aos="fade-up">Fast forward your career in tech with AlmaBetter</h3>
+                            <h3 data-aos="fade-up">Fast forward your career in tech with Be Practical</h3>
                             <div className="carousel-footer">
                                 <button className="join-btn p-3 w-100" data-aos="fade-up">Explore Courses</button>
                             </div>
@@ -207,8 +264,14 @@ function Home() {
                         </div>
                 </div>
             </div>
+           
       </section>
       <StudentsPlaced/>
+      <ChatBotContainer/>
+      <h1 className="banner-heading" data-aos="fade-up">Why You Choose BE Practical?</h1>
+      <Skills/>
+            <YoutubeVideos/>
+    
     </div>
   )
 }

@@ -1,0 +1,39 @@
+:root{
+    --main-color:rgb(240 0 55/1);
+    --main-light-color:rgb(252 244 245/1);
+    --white-color:#fff;
+    --black-color:#000;
+  }
+.youtube-card{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 10px;
+    max-width: 100%;
+    word-break: inherit;
+    overflow: hidden;
+}
+.youtube-header{
+    position: relative !important;
+    height: 200px !important;
+}
+.youtube-header .youtube-play-btn{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:transparent;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.youtube-play-btn .play-icon{
+    width: 40px;
+    height: 40px;
+    background-color: var(--white-color);
+    padding: 10px;
+}
+.youtube-body img{
+    width: 100%;
+    border-radius: 100px;
+    border: 2px solid var(--main-color);
+}

@@ -4,7 +4,6 @@
     --white-color:#fff;
     --black-color:#000;
 }
-* course tabs  */
 .full-screen-tabs {
     display: flex;
     flex-direction: column;

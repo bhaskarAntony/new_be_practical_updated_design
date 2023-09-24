@@ -7,6 +7,8 @@ import Adwantages from './Adwantages'
 import Feedback from './Feedback'
 import CourseCompany from './CourseCompany'
 import AOS from 'aos';
+import CourseTab from './CourseTab'
+import ChatBotContainer from './ChatBotContainer'
 
 var languages =[
     {
@@ -142,6 +144,7 @@ function Java() {
             </div>
         </div>
       </div>
+      <CourseTab/>
       <StudentsPlaced/>
       <h1 className="banner-heading" data-aos="fade-up">What Programming Languages You will Learn?</h1>
       <section className='main-lan-container container-fluid bg-light py-2'>
@@ -159,6 +162,7 @@ function Java() {
       <CourseCompany/>
       <h1 className="banner-heading" data-aos="fade-up">Adwantages @ Be Practical</h1>
       <Adwantages/>
+      <ChatBotContainer/>
       <h1 className="banner-heading" data-aos="fade-up">What Students says About Course?</h1>
       <Feedback/>
     </section>

@@ -142,7 +142,7 @@ function StudentsPlaced() {
     );
   }
   return (
-    <section className='bg-light p-2'>
+    <section className='bg-light p-2' id="placed">
         <h1 className="banner-heading" data-aos="fade-up">Transforming careers with Our 100% Job Guarntee Program</h1>
         <p className="banner-subtitle text-secondary px-5" data-aos="fade-up">We don’t just give certification but outcomes!</p>
       <div className="students-placed">
@@ -168,7 +168,7 @@ function StudentsPlaced() {
                     <span className="fs-4 placed-student-name">{item.name}</span>
                     <p className="text-secondary">{item.started}</p>
                     <div className="arrow">
-                        <img src="https://cdn-icons-png.flaticon.com/128/981/981086.png" alt="" />
+                        <img src="https://cdn-icons-png.flaticon.com/128/3227/3227489.png" alt="" />
                     </div>
                     <p className="text-secondary">{item.role}</p>
                     <div className="placed-company">

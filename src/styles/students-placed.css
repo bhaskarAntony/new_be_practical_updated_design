@@ -8,6 +8,7 @@
     padding: 10px;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    background-color: #fff;
 }
 .placed-card-header{
     position: relative;
@@ -27,7 +28,7 @@
     padding: 10px;
 }
 .placed-card-body .arrow img{
-    height: 100px;
+    height: 50px;
 }
 .placed-company img{
     width: 100%;

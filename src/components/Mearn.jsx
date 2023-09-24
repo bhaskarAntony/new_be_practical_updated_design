@@ -7,6 +7,10 @@ import Feedback from './Feedback'
 import Adwantages from './Adwantages'
 import CourseCompany from './CourseCompany'
 import AOS from 'aos';
+import CourseTab from './CourseTab'
+import ChatBotContainer from './ChatBotContainer'
+import YoutubeVideos from '../components/YoutubeVideos'
+import AllCourses from './AllCourses'
 
 var languages =[
     {
@@ -58,7 +62,7 @@ function Mearn() {
       }, []);
   return (
     <section>
-      <div className="course-home container-fluid">
+      <section className="course-home container-fluid" id="home">
         <div className="row">
             <div className="col-12 col-md-12 col-lg-6">
                 <div className="course-single-text">
@@ -141,10 +145,10 @@ function Mearn() {
                 </div>
             </div>
         </div>
-      </div>
-      <StudentsPlaced/>
+      </section>
+      <CourseTab/>
       <h1 className="banner-heading" data-aos="fade-up">What Programming Languages You will Learn?</h1>
-      <section className='main-lan-container container-fluid bg-light py-2'>
+      <section className='main-lan-container container-fluid bg-light py-2' id="languages">
             <div className="lan-inner-container">
                 <div className="row">
                     <div className="col-12 col-md-6 col-lg-8">
@@ -157,10 +161,19 @@ function Mearn() {
             </div>
       </section>
  <CourseCompany/>
+
+      <StudentsPlaced/>
+     
       <h1 className="banner-heading" data-aos="fade-up">Adwantages @ Be Practical</h1>
       <Adwantages/>
+      <YoutubeVideos/>
+      <ChatBotContainer/>
+      <section id="feedback">
       <h1 className="banner-heading" data-aos="fade-up">What Students says About Course?</h1>
       <Feedback/>
+      </section>
+      <h1 className="banner-heading" data-aos="fade-up">You may also like these Courses</h1>
+      <AllCourses/>
     </section>
   )
 }
