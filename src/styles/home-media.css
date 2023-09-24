@@ -17,9 +17,16 @@
     }
     .carousel-footer .join-btn, .carousel-footer .book-btn{
         font-size: 1.1rem;
+        padding: 10px;
     }
     .quote-container{
         padding: 10px;
     }
+    .register-container-home .form-control{
+        padding: 10px;
+    }
+    .register-container-home .form-group{
+        margin-top: 10px !important;
+      }
 
 }
