@@ -36,4 +36,8 @@
     align-items: center;
     justify-content: center;
 }
-
+@media (max-width:768px){
+    .adwantages-container p{
+        font-size: 1em !important;
+    }
+}
