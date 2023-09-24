@@ -4,10 +4,12 @@
         min-height: fit-content;
         padding: 30px 10px;
         padding-bottom: 10%;
-        text-align: center;
+        /* text-align: center; */
+        min-height: 90vh;
     }
     .carousel-footer{
         justify-content: center;
+        flex-flow: row wrap !important;
     }
     .carousal-heading{
         font-size: 2.6rem;
@@ -17,13 +19,16 @@
     }
     .carousel-footer .join-btn, .carousel-footer .book-btn{
         font-size: 1.1rem;
-        padding: 10px;
+        padding: 8px;
     }
     .quote-container{
         padding: 10px;
     }
     .register-container-home .form-control{
         padding: 10px;
+    }
+    .r-join, .r-book{
+        min-width: 100%;
     }
     .register-container-home .form-group{
         margin-top: 10px !important;

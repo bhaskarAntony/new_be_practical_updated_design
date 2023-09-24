@@ -9,6 +9,7 @@
 .adwantages-container{
     background-color: var(--dim-black);
     min-height: 100vh;
+    padding: 20px 0;
 }
 .adwantage-card{
     background-color: var(--card-bg);

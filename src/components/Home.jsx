@@ -91,8 +91,8 @@ function Home() {
                 <p className='carousel-body-text' data-aos="fade-up">Build skills with courses, certificates, and degrees online from world-class universities and companies.</p>
             </div>
            <div className="carousel-footer">
-                <button className='join-btn p-2' data-aos="fade-up">Join For Free</button>
-                <button className='book-btn p-2' data-aos="fade-up">Book Your Free Master Classes</button>
+           <button className='r-join join-btn p-2' data-aos="fade-up">Join For Free</button>
+                <button className='r-book book-btn p-2' data-aos="fade-up">Book Your Free Master Classes</button>
             </div>
            </div>
            
@@ -106,8 +106,8 @@ function Home() {
                 <p className='carousel-body-text' data-aos="fade-up">Build skills with courses, certificates, and degrees online from world-class universities and companies.</p>
             </div>
             <div className="carousel-footer">
-                <button className='join-btn p-2' data-aos="fade-up">Join For Free</button>
-                <button className='book-btn p-2' data-aos="fade-up">Book Your Free Master Classes</button>
+            <button className='r-join join-btn p-2' data-aos="fade-up">Join For Free</button>
+                <button className='r-book book-btn p-2' data-aos="fade-up">Book Your Free Master Classes</button>
             </div>
            </div>
           </Carousel.Item>
@@ -120,8 +120,8 @@ function Home() {
                 <p className='carousel-body-text'>Build skills with courses, certificates, and degrees online from world-class universities and companies.</p>
             </div>
             <div className="carousel-footer">
-                <button className='join-btn p-2' data-aos="fade-up">Join For Free</button>
-                <button className='book-btn p-2' data-aos="fade-up">Book Your Free Master Classes</button>
+                <button className='r-join join-btn p-2' data-aos="fade-up">Join For Free</button>
+                <button className='r-book book-btn p-2' data-aos="fade-up">Book Your Free Master Classes</button>
             </div>
            </div>
           </Carousel.Item>

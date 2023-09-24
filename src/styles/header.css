@@ -80,8 +80,12 @@
     padding: 0 !important;
   }
   @media(max-width:769px){
+    .navbar-brand img{
+      width: 150px;
+  }
     nav{
       background-color: var(--main-color);
+      padding: 10px !important;
     }
     .navbar-nav .nav-link{
       color: var(--white-color);
@@ -91,8 +95,5 @@
     }
     .dropdown-toggle{
       color: var(--main-color) !important;
-    }
-    .navbar-brand{
-      color: var(--white-color) !important;
     }
   }
