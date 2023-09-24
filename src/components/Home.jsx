@@ -91,8 +91,8 @@ function Home() {
                 <p className='carousel-body-text' data-aos="fade-up">Build skills with courses, certificates, and degrees online from world-class universities and companies.</p>
             </div>
            <div className="carousel-footer">
-           <button className='r-join join-btn p-2' data-aos="fade-up">Join For Free</button>
-                <button className='r-book book-btn p-2' data-aos="fade-up">Book Your Free Master Classes</button>
+           <button className='r-join join-btn p-3' data-aos="fade-up">Join For Free</button>
+                <button className='r-book book-btn p-3' data-aos="fade-up">Book Your Free Master Classes</button>
             </div>
            </div>
            
@@ -106,8 +106,8 @@ function Home() {
                 <p className='carousel-body-text' data-aos="fade-up">Build skills with courses, certificates, and degrees online from world-class universities and companies.</p>
             </div>
             <div className="carousel-footer">
-            <button className='r-join join-btn p-2' data-aos="fade-up">Join For Free</button>
-                <button className='r-book book-btn p-2' data-aos="fade-up">Book Your Free Master Classes</button>
+            <button className='r-join join-btn p-3' data-aos="fade-up">Join For Free</button>
+                <button className='r-book book-btn p-3' data-aos="fade-up">Book Your Free Master Classes</button>
             </div>
            </div>
           </Carousel.Item>
@@ -120,8 +120,8 @@ function Home() {
                 <p className='carousel-body-text'>Build skills with courses, certificates, and degrees online from world-class universities and companies.</p>
             </div>
             <div className="carousel-footer">
-                <button className='r-join join-btn p-2' data-aos="fade-up">Join For Free</button>
-                <button className='r-book book-btn p-2' data-aos="fade-up">Book Your Free Master Classes</button>
+                <button className='r-join join-btn p-3' data-aos="fade-up">Join For Free</button>
+                <button className='r-book book-btn p-3' data-aos="fade-up">Book Your Free Master Classes</button>
             </div>
            </div>
           </Carousel.Item>
@@ -185,13 +185,13 @@ function Home() {
               <div className="row">
                 <div className="col-12 col-sm-12 col-md-6 col-lg-6">
                   <div className="form-group">
-                    <label htmlFor="name" className="form-label">Enter Your Name</label>
+                    {/* <label htmlFor="name" className="form-label">Enter Your Name</label> */}
                     <input type="text" placeholder='Name' className='form-control' />
                   </div>
                 </div>
                 <div className="col-12 col-sm-12 col-md-6 col-lg-6">
                 <div className="form-group">
-                  <label htmlFor='email' className="form-label">Email Address</label>
+                  {/* <label htmlFor='email' className="form-label">Email Address</label> */}
                   <input type="email" placeholder='Email' className='form-control' />
                  </div> 
                 </div>
@@ -201,13 +201,13 @@ function Home() {
               <div className="row">
                 <div className="col-12 col-sm-12 col-md-6 col-lg-6">
                  <div className="form-group">
-                  <label htmlFor='phone' className="form-label">Mobile Number</label>
+                  {/* <label htmlFor='phone' className="form-label">Mobile Number</label> */}
                   <input type="number" placeholder='Phone' className='form-control' />
                  </div>
                 </div>
                 <div className="col-12 col-sm-12 col-md-6 col-lg-6">
                  <div className="form-group form-group-last">
-                  <label htmlFor="course" className="form-label">Select Course</label>
+                  {/* <label htmlFor="course" className="form-label">Select Course</label> */}
                   <select className='form-control'>
                     <option value="mern">MERN</option>
                     <option value="mern">Python Fullstack</option>

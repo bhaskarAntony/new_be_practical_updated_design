@@ -32,6 +32,7 @@
 .m1 ul{
     padding: 15px;
     /* list-style-image: url(../images/arrow.png); */
+    list-style-type: none;
 }
 .m1 ul li a{
     text-decoration: none;
@@ -42,7 +43,7 @@
 }
 .m1 ul li a:hover{
     text-decoration:underline;
-    color:gold;
+    color:var(--main-color);
 
 }
 .m1 ul li{
@@ -51,7 +52,7 @@
 
 }
 .m1 ul li a:hover li{
-   border-bottom: 1px solid gold;
+   border-bottom: 1px solid var(--main-color);
    width: fit-content;
 
 }
@@ -78,7 +79,7 @@
     position: absolute;
     width: 80%;
     height: 4px;
-    background-color:#eaa81b;
+    background-color:var(--main-color);
     left: 0;
     bottom: -20px;
 }
@@ -93,7 +94,7 @@
     position: absolute;
     width: 80%;
     height: 4px;
-    background-color:#eaa81b;
+    background-color:var(--main-color);
     left: 0;
     bottom: -20px;
 }
@@ -116,7 +117,7 @@
 
 
 .right ul li a{
-    color: #fff;
+    color: var(--white-color);
     text-decoration: none;
     font-size: 1em;
     letter-spacing: 1px;
@@ -138,13 +139,5 @@
 .right ul{
     padding: 15px;
 }
-/* .footer-wave{
-    height: 200px;
-    margin-bottom: -35px;
-    width: 100%;
-    background: url('../images/footer-wave.svg') no-repeat center bottom;
-    background-size: cover;
-    background-color: #fff;
-} */
 
 

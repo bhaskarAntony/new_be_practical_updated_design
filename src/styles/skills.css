@@ -142,6 +142,9 @@
     .video-status{
         gap: 0;
     }
+    .skillsmain .right{
+        padding: 10px;
+    }
 }
 .play-video:hover{
     transform: scale(1.1);

@@ -61,7 +61,7 @@ function Adwantages() {
             Mentoring for our full stack course starts long before a teacher gives an individual training session and continues long after the training session is over. Assessment, motivation, design, delivery, and evaluation are all connected stages or activities in this job guaranteed courses in Bangalore.</p>
        <div className="row">
        {adwantages.map((item, index) => (
-                        <div className="col-12 col-md-6 col-lg-4" key={index}>
+                        <div className="col-6 col-sm-6 col-md-4 col-lg-4" key={index}>
                             <div className="adwantage-card mb-3 p-3" data-aos="zoom-in-down">
                                 <div className="adwantage-header">
                                     <img src={item.icon} alt="" />
@@ -76,8 +76,8 @@ function Adwantages() {
                     ))}
        </div>
        <div className="carousel-footer adwantage-btns">
-                <button className='join-btn p-2' data-aos="fade-up">Join Now</button>
-                <button className='book-btn p-2' data-aos="fade-up">Book Your Free Master Classes</button>
+                <button className='join-btn p-3' data-aos="fade-up">Join Now</button>
+                <button className='book-btn p-3' data-aos="fade-up">Book Your Free Master Classes</button>
             </div>
       </div>
     </section>

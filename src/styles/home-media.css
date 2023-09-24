@@ -17,7 +17,7 @@
     .carousel-body-text{
         font-size: 1.2rem;
     }
-    .carousel-footer .join-btn, .carousel-footer .book-btn{
+    .carousel-footer .join-btn, .carousel-footer .book-btn, .enrol-btn, .register-btn{
         font-size: 1.1rem;
         padding: 8px;
     }
@@ -27,11 +27,17 @@
     .register-container-home .form-control{
         padding: 10px;
     }
+    .register-container-home .form-group .form-label{
+        display: none;
+    }
     .r-join, .r-book{
         min-width: 100%;
     }
     .register-container-home .form-group{
         margin-top: 10px !important;
+      }
+      .banner-heading{
+        padding: 5px;
       }
 
 }
