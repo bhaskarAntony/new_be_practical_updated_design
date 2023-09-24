@@ -29,10 +29,9 @@
   width: fit-content;
   background: url(https://www.almabetter.com/_next/static/media/section-title-underline-decoration.25fa90ef.svg) no-repeat bottom left;
   padding: 50px;
+  font-weight: 600;
   padding-bottom: 15px !important;
   letter-spacing: -1px;
-  font-weight: 900;
-  font-size: 36px;
   line-height: 44px
 }
 /* Styling for the custom carousel and indicators */
@@ -114,9 +113,8 @@
 } */
 .carousal-heading{
     font-size: 3.5rem;
-    font-weight: 900;
+    font-weight: 600;
     letter-spacing: -1px;
-    font-family: gellix-semibold,sans-serif;
 }
 .carousel-body-text{
     font-size: 1.3rem;
