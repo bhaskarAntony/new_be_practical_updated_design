@@ -17,6 +17,7 @@ import ChatBotContainer from './ChatBotContainer';
 import DialogModel from './DialogModel';
 import bg from '../images/website home section.svg'
 import YoutubeVideos from '../components/YoutubeVideos'
+import Webinar from './Webinar';
 
 function Home() {
 
@@ -270,6 +271,7 @@ function Home() {
       <ChatBotContainer/>
       <h1 className="banner-heading" data-aos="fade-up">Why You Choose BE Practical?</h1>
       <Skills/>
+      <Webinar/>
             <YoutubeVideos/>
     
     </div>
