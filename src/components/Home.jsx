@@ -19,6 +19,7 @@ import bg from '../images/website home section.svg'
 import bg1 from '../images/bgg-home.svg'
 import YoutubeVideos from '../components/YoutubeVideos'
 import Webinar from './Webinar';
+import H from './H';
 
 function Home() {
 

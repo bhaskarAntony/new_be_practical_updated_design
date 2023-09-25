@@ -86,6 +86,7 @@
     nav{
       background-color: var(--main-color);
       padding: 10px !important;
+      z-index: 10;
     }
     .navbar-nav .nav-link{
       color: var(--white-color);

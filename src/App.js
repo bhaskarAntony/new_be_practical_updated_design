@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div>
-      {/* <Header/>
+      <Header/>
      <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
@@ -29,8 +29,7 @@ function App() {
         <Route path='/*' element={<Home/>}></Route>
       </Routes>
      </BrowserRouter>
-      <Footer/> */}
-      <H/>
+      <Footer/>
     </div>
   )
 }
