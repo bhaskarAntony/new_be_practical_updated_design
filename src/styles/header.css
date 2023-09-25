@@ -96,4 +96,9 @@
     .dropdown-toggle{
       color: var(--main-color) !important;
     }
+    .nav-apply-btn{
+      border: 1px solid var(--white-color) !important;
+      color: var(--white-color);
+      min-width: 100%;
+    }
   }

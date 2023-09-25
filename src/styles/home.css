@@ -131,9 +131,10 @@
     padding: 20px;
     align-items:center;
     justify-content: center;
-    background: url('../images/blob-haikei.svg') no-repeat center;
+    /* background: url('../images/blob-haikei.svg') no-repeat center; */
     background-size: cover;
-    background-color: var(--white-color);
+    /* background-color: var(--white-color); */
+    background: transparent;
 }
 .star-container{
   position: absolute;

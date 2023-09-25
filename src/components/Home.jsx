@@ -15,7 +15,7 @@ import Elite from './Elite';
 import Bot from './Bot';
 import ChatBotContainer from './ChatBotContainer';
 import DialogModel from './DialogModel';
-import bg from '../images/website home section.svg'
+import bg from '../images/bg-home.png'
 import YoutubeVideos from '../components/YoutubeVideos'
 import Webinar from './Webinar';
 
@@ -175,7 +175,7 @@ function Home() {
                 </div>
             </div>
         </div>
-        <div className="register-container-home">
+        <div className="register-container-home bg-white">
         <div className="register align-items-center rounded-2 p-3">
           <div className="p-2 rounded-2 py-3 border-0 bg-tranparent">
             <div className="card-header-text text-center w-100">
