@@ -132,6 +132,11 @@
     border-radius: 10px;
     animation: battery-charge 6s linear infinite;
 }
+@media (max-width:528px){
+    .battery::before{
+        font-size: 1em;
+    }
+}
 @keyframes battery-charge{
     0%{
         width: 0%;

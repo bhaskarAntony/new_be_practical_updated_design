@@ -71,7 +71,7 @@ const FAQ = () => {
       ))}
         </div>
         <div className="col-12 col-md-12 col-lg-6">
-            <div className="module-right rounded-3 bg-white p-5 fs-5">
+            <div className="module-right rounded-3 bg-white p-lg-5 p-1 fs-5">
             <div className="battery-container">
                             <div className="battery">
 
