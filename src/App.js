@@ -10,12 +10,13 @@ import Java from './components/Java'
 import DataScience from './components/DataScience'
 import DigitalMarket from './components/DigitalMarket'
 import CloudOops from './components/CloudOops'
+import H from './components/H'
 
 function App() {
 
   return (
     <div>
-      <Header/>
+      {/* <Header/>
      <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home/>}></Route>
@@ -28,7 +29,8 @@ function App() {
         <Route path='/*' element={<Home/>}></Route>
       </Routes>
      </BrowserRouter>
-      <Footer/>
+      <Footer/> */}
+      <H/>
     </div>
   )
 }

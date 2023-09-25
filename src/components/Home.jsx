@@ -16,6 +16,7 @@ import Bot from './Bot';
 import ChatBotContainer from './ChatBotContainer';
 import DialogModel from './DialogModel';
 import bg from '../images/website home section.svg'
+import bg1 from '../images/bgg-home.svg'
 import YoutubeVideos from '../components/YoutubeVideos'
 import Webinar from './Webinar';
 
@@ -79,6 +80,7 @@ function Home() {
     <div>
        <DialogModel show={showModal} handleClose={handleCloseModal} />
              <section className="home container-fluid">
+              <div className="blurer"></div>
         <div className="row">
             <div className="col-12 col-md-12 col-lg-6">
             <div className="custom-carousel">
@@ -140,7 +142,13 @@ function Home() {
             </div>
             <div className="col-12 col-md-12 col-lg-6">
                 <div className="home-right">
-                    <img src={bg} alt="" />
+                {/* <div className="blur-image">
+                    <img src={bg1} alt="" />
+                    </div> */}
+                <div className="main-image">
+                <img src={bg} alt="" />
+                </div>
+                   
                    {/* <div className="home-image-container">
                    <div className="home-image1">
                       <img src="https://images.pexels.com/photos/4467687/pexels-photo-4467687.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />

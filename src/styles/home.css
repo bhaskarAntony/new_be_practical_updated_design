@@ -122,6 +122,18 @@
 .main-text{
     color: var(--main-color);
 }
+.home {
+  position: relative;
+}
+.blurer{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--main-color);
+  filter: blur(150px);
+  width: 100%;
+  height: 200px;
+}
 .home-right{
   position: relative;
   min-height: 80vh;
@@ -131,10 +143,24 @@
     padding: 20px;
     align-items:center;
     justify-content: center;
-    /* background: url('../images/blob-haikei.svg') no-repeat center; */
+    /* background: url('../images/bg-home2.svg') no-repeat center; */
     background-size: cover;
-    /* background-color: var(--white-color); */
-    background: transparent;
+    background-color:transparent
+    /* background: transparent; */
+}
+.blur-image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: blur(10px);
+}
+.blur-image img{
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.main-image img{
+z-index: 10;
 }
 .star-container{
   position: absolute;
