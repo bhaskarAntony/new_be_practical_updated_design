@@ -1,0 +1,39 @@
+/* src/CourseModule.css */
+
+.month-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007bff; /* Blue color for month titles */
+  }
+  
+  .step {
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn-link {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .btn-link:hover {
+    color: #007bff;
+  }
+  
+  .bi-arrow-right-circle {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #007bff;
+  }
+  
+  .collapse {
+    margin-top: 10px;
+  }
+  
+  .step-content {
+    font-size: 16px;
+    color: #555;
+  }
+  

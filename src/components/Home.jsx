@@ -25,7 +25,7 @@ function Home() {
 
 
   useEffect(() => {
-    AOS.init(); // Initialize AOS
+    AOS.init();
   }, []);
 
   //model open logic 
@@ -81,7 +81,6 @@ function Home() {
     <div>
        <DialogModel show={showModal} handleClose={handleCloseModal} />
              <section className="home container-fluid">
-              <div className="blurer"></div>
         <div className="row">
             <div className="col-12 col-md-12 col-lg-6">
             <div className="custom-carousel">
@@ -143,44 +142,9 @@ function Home() {
             </div>
             <div className="col-12 col-md-12 col-lg-6">
                 <div className="home-right">
-                {/* <div className="blur-image">
-                    <img src={bg1} alt="" />
-                    </div> */}
                 <div className="main-image">
                 <img src={bg} alt="" />
                 </div>
-                   
-                   {/* <div className="home-image-container">
-                   <div className="home-image1">
-                      <img src="https://images.pexels.com/photos/4467687/pexels-photo-4467687.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-                   <div className="scroll-text-home">
-                   <marquee behavior="scroll" direction="left">Bhaskar Antony Placed At Google</marquee>
-                   </div>
-                    </div>
-                    <div className="home-image1">
-                      <img src="https://images.pexels.com/photos/3178818/pexels-photo-3178818.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
-                      <div className="scroll-text-home">
-                   <marquee behavior="scroll" direction="left">Bhaskar Antony Placed At Google</marquee>
-                   </div>
-                    </div>
-                   </div>
-                   <div className="home-image-container">
-                   <div className="home-image1">
-                      <img src="https://images.pexels.com/photos/4226122/pexels-photo-4226122.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
-                      <div className="scroll-text-home">
-                   <marquee behavior="scroll" direction="left">Bhaskar Antony Placed At Google</marquee>
-                   </div>
-                    </div>
-                    <div className="home-image1">
-                      <img src="https://images.pexels.com/photos/4065158/pexels-photo-4065158.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
-                      <div className="scroll-text-home">
-                   <marquee behavior="scroll" direction="left">Bhaskar Antony Placed At Google</marquee>
-                   </div>
-                    </div>
-                   </div> */}
-                   {/* <div className="star-container">
-                   <i class="bi bi-star-fill"></i>
-                   </div> */}
                 </div>
             </div>
         </div>
@@ -195,13 +159,11 @@ function Home() {
               <div className="row">
                 <div className="col-12 col-sm-12 col-md-6 col-lg-6">
                   <div className="form-group">
-                    {/* <label htmlFor="name" className="form-label">Enter Your Name</label> */}
                     <input type="text" placeholder='Name' className='form-control' />
                   </div>
                 </div>
                 <div className="col-12 col-sm-12 col-md-6 col-lg-6">
                 <div className="form-group">
-                  {/* <label htmlFor='email' className="form-label">Email Address</label> */}
                   <input type="email" placeholder='Email' className='form-control' />
                  </div> 
                 </div>
@@ -211,13 +173,11 @@ function Home() {
               <div className="row">
                 <div className="col-12 col-sm-12 col-md-6 col-lg-6">
                  <div className="form-group">
-                  {/* <label htmlFor='phone' className="form-label">Mobile Number</label> */}
                   <input type="number" placeholder='Phone' className='form-control' />
                  </div>
                 </div>
                 <div className="col-12 col-sm-12 col-md-6 col-lg-6">
                  <div className="form-group form-group-last">
-                  {/* <label htmlFor="course" className="form-label">Select Course</label> */}
                   <select className='form-control'>
                     <option value="mern">MERN</option>
                     <option value="mern">Python Fullstack</option>

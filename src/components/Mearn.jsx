@@ -11,6 +11,10 @@ import CourseTab from './CourseTab'
 import ChatBotContainer from './ChatBotContainer'
 import YoutubeVideos from '../components/YoutubeVideos'
 import AllCourses from './AllCourses'
+// import CourseModels from './CourseModels'
+import Model from './Model'
+import FAQ from './FAQ'
+
 
 var languages =[
     {
@@ -146,7 +150,6 @@ function Mearn() {
             </div>
         </div>
       </section>
-      <CourseTab/>
       <h1 className="banner-heading" data-aos="fade-up">What Programming Languages You will Learn?</h1>
       <section className='main-lan-container container-fluid bg-light py-2' id="languages">
             <div className="lan-inner-container">
@@ -161,7 +164,7 @@ function Mearn() {
             </div>
       </section>
  <CourseCompany/>
-
+<FAQ/>
       <StudentsPlaced/>
      
       <h1 className="banner-heading" data-aos="fade-up">Adwantages @ Be Practical</h1>
