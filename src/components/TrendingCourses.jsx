@@ -50,18 +50,6 @@ var courses = [
         rating:"4.5",
         icon: "https://cdn-icons-png.flaticon.com/128/3305/3305673.png",
         image: "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-        id:5,
-        name: "Data Science",
-        duration: "4.5 Months",
-        tag:"Trending",
-        trainer: "...",
-        languages: ["html", "css", "Bootstrap", "Javascript", "React Js", "NodeJs", "Express JS", "MongoDB"],
-        ratedStudents: "465",
-        rating:"4.5",
-        icon: "https://cdn-icons-png.flaticon.com/128/2756/2756778.png",
-        image: "https://images.pexels.com/photos/2102415/pexels-photo-2102415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     }
 ]
 

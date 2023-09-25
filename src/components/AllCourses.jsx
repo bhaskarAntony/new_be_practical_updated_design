@@ -63,10 +63,16 @@ function AllCourses() {
                       <div className="card course-card" data-aos="zoom-in">
                       <div className={`course-card-header p-2 d-flex align-items-end bg-primary justify-content-between course-card-header${item.id}`}>
                         <div className="header-img">
-                            <img src={item.icon} alt="" />
+                            
                         </div>
                         <div className="course-header-text text-white text-end">
                             <h4>{item.name}</h4>
+                        </div>
+                        <div className="curve">
+
+                        </div>
+                        <div className="blur">
+                        <img src="https://media.istockphoto.com/id/1193323373/vector/a-colorful-trendy-card-design-vector-illustration.jpg?s=612x612&w=0&k=20&c=iIqY56kV1nKpfKCceag5NFWBnogRv8ZmJCFiicZxlpU=" alt="" />
                         </div>
                            <div className="highlighter p-2">
                             <p className="p-1 px-3 text-white bg-primary rounded-5"><i class="bi bi-fire"></i>{item.tag}</p>

@@ -41,14 +41,6 @@ function Courses() {
      <ul className="nav nav-tabs custom-tabs">
         <li className="nav-item">
           <a
-            className={`nav-link ${activeTab === 'tab1' ? 'active' : ''}`}
-            onClick={() => handleTabClick('tab1')}
-          >
-            <i class="bi bi-border-all"></i> All
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
             className={`nav-link ${activeTab === 'tab2' ? 'active' : ''}`}
             onClick={() => handleTabClick('tab2')}
           >
@@ -75,10 +67,6 @@ function Courses() {
       <button className='apply-btn' data-aos="fade-up">Apply Now</button>
      </div>
       <div className="tab-content">
-        {/* Content for each tab */}
-        {activeTab === 'tab1' && <div>
-            <AllCourses/>
-            </div>}
         {activeTab === 'tab2' && 
         <div>
             <TrendingCourses/>

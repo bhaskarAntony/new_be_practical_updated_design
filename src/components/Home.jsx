@@ -15,7 +15,7 @@ import Elite from './Elite';
 import Bot from './Bot';
 import ChatBotContainer from './ChatBotContainer';
 import DialogModel from './DialogModel';
-import bg from '../images/bg-home.png'
+import bg from '../images/website home section.svg'
 import YoutubeVideos from '../components/YoutubeVideos'
 import Webinar from './Webinar';
 
