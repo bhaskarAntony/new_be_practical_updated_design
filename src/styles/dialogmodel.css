@@ -4,6 +4,9 @@
     --white-color:#fff;
     --black-color:#000;
   }
+  .dialog_register{
+    backdrop-filter: blur(10px);
+  }
   .modal-header{
     background-color: var(--white-color);
     border:none !important;
