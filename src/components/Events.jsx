@@ -4,6 +4,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css'; // Import the default styles
 import '../styles/events.css'
 import UpcomingEvents from './UpCommingEvents';
+import Feedback from './Feedback';
 
 const upcomingevents = [
   {
@@ -65,6 +66,7 @@ function Events() {
     </TabPanel>
   </Tabs>
     </div>
+    <Feedback/>
   </div>
   );
 }
