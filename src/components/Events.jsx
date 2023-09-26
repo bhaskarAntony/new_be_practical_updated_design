@@ -50,8 +50,8 @@ const pastevents = [
 ];
 function Events() {
   return (
-  <div className="container-fluid events-main">
-      <div className="container">
+  <div className="container-fluid events-main p-lg-5 p-md-1 p-1">
+      <div className="container-fluid">
       <Tabs>
     <TabList className="custom-tabs">
       <Tab className="custom-tab">Events</Tab>

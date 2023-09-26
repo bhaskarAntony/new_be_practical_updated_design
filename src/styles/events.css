@@ -111,4 +111,10 @@
   .custom-tab {
     padding: 5px;
   }
+  .event-card h3, .event-card h4, .event-card h5{
+      font-size: 1em;
+  }
+  .event-card button{
+    width: 100% !important;
+  }
 }

@@ -38,12 +38,12 @@ function UpcomingEvents(props) {
           </div>
           <div className="col-12 col-md-12 col-lg-6">
             <div className="event-text p-3">
-              <p className="fs-3 fw-bold">{event.title}</p>
-              <p className='fs-3 keyword'>{event.keyword}</p>
-              <p className="mt-2 fs-3">What you will Learn</p>
+              <h3 className="fw-bold">{event.title}</h3>
+              <h5 className='keyword'>{event.keyword}</h5>
+              <h4 className="mt-3 text-success">What you will Learn</h4>
               <p className='text-light'>{event.description}</p>
-              <p className="fs-3 mt-3 text-black">{event.date}</p>
-              <p className="fs-3 mt-3 text-black">{event.time}</p>
+              <p className="mt-lg-3 text-warning">{event.date}</p>
+              <p className="mt-lg-3 text-warning">{event.time}</p>
               <div className="carousel-footer">
                 <button className="join-btn p-2 w-md-100">Book Free Ticket</button>
                 <button className="enrol-btn p-2 w-md-100">Enquire</button>
