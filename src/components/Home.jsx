@@ -198,6 +198,7 @@ function Home() {
         </div>
        </section>
       <Courses/>
+      <h1 className="banner-heading">Join Our Elite Program</h1>
       <Elite/>
       <Training/>
        <Companies/>

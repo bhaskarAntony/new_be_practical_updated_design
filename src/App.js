@@ -15,6 +15,7 @@ import Events from './components/Events';
 import Bot from './components/Bot';
 import Gallery from './components/Gallery';
 import ContactPage from './components/ContactPage';
+import ElitePage from './components/ElitePage';
 
 function App() {
   const [isChatbotVisible, setIsChatbotVisible] = useState(false);
@@ -54,6 +55,7 @@ function App() {
           <Route path='/events' element={<Events />} />
           <Route path='/gallery' element={<Gallery />} />
           <Route path='/contacts' element={<ContactPage />} />
+          <Route path='/elite' element={<ElitePage />} />
           <Route path='/*' element={<Home />} />
         </Routes>
       </BrowserRouter>

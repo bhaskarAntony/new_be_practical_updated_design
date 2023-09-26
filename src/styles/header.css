@@ -2,6 +2,8 @@
     --main-color:rgb(240 0 55/1);
     --white-color:#fff;
     --black-color:#000;
+    --gold:radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
 }
 
 .navbar-nav .nav-link {
@@ -9,6 +11,12 @@
     font-size: 1.2rem;
     padding: 10px 20px;
     font-weight: 500;
+  }
+  .elite-link{
+      background:var(--gold) !important;
+      color: var(--white-color) !important;
+      border-radius: 100px;
+      padding: 5px 20px !important;
   }
   .navbar-nav .nav-link:active{
     color: var(--main-color);

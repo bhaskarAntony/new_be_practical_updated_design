@@ -4,8 +4,7 @@ import '../styles/elite.css'
 function Elite() {
   return (
     <section>
-         <h1 className="banner-heading">Join Our Elite Program</h1>
-      <div className="elite">
+      <div className="elite text-black">
         <h2 className="text-center text-white">Join our <span className="main-text">Elite</span> Program, Get 50% Refund if not Placed</h2>
         <div className="elite-card-container container">
         <div className="row">
