@@ -237,7 +237,7 @@ function Home() {
            
       </section>
       <StudentsPlaced/>
-      <ChatBotContainer/>
+      {/* <ChatBotContainer/> */}
       <h1 className="banner-heading" data-aos="fade-up">Why You Choose BE Practical?</h1>
       <Skills/>
       <Webinar/>

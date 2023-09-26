@@ -8,6 +8,7 @@ import Feedback from './Feedback';
 
 const upcomingevents = [
   {
+    bookticket:true,
     image: "https://be-practical.com/images/event/event1.png",
     title: "Connect With Industry Heads. MR. Satish SG",
     keyword: "Industry Talks",
@@ -17,6 +18,7 @@ const upcomingevents = [
     topic: "Learn about the latest trends in the IT industry. Top Courses which will help freshers in placements. Interact with Shrikanth to clear the doubts which will help in your career."
   },
   {
+    bookticket:true,
     image: "https://be-practical.com/images/event/event1.png",
     title: "Connect With Industry Heads. MR. Satish SG",
     keyword: "Industry Talks",
@@ -29,6 +31,7 @@ const upcomingevents = [
 ];
 const pastevents = [
   {
+    bookticket:false,
     image: "https://be-practical.com/images/event/event1.png",
     title: "Connect With Industry Heads. MR. Satish SG",
     keyword: "Industry Talks",
@@ -38,6 +41,7 @@ const pastevents = [
     topic: "Learn about the latest trends in the IT industry. Top Courses which will help freshers in placements. Interact with Shrikanth to clear the doubts which will help in your career."
   },
   {
+    bookticke:false,
     image: "https://be-practical.com/images/event/event1.png",
     title: "Connect With Industry Heads. MR. Satish SG",
     keyword: "Industry Talks",

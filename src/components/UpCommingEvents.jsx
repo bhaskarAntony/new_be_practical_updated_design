@@ -46,8 +46,15 @@ function UpcomingEvents(props) {
               <p className="mt-lg-3 text-warning">{event.date}</p>
               <p className="mt-lg-3 text-warning">{event.time}</p>
               <div className="carousel-footer">
+                {
+                 event.bookticket? 
+                 <>
                 <button className="join-btn p-2 w-md-100">Book Free Ticket</button>
-                <button className="enrol-btn p-2 w-md-100">Enquire</button>
+                 </> : null
+                }
+   <button className="enrol-btn p-2 w-md-100">Enquire</button>
+
+               
               </div>
             </div>
           </div>

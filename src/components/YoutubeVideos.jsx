@@ -170,8 +170,8 @@ function StudentsPlaced() {
     );
   }
   return (
-    <section className='bg-white p-2' id="placed">
-        <h1 className="banner-heading" data-aos="fade-up"></h1>
+    <section className=' p-2 youtube-container' id="placed">
+        <h1 className="banner-heading" data-aos="fade-up">What our students says about institute</h1>
         <p className="banner-subtitle text-secondary px-5" data-aos="fade-up">We don’t just give certification but outcomes!</p>
       <div className="students-placed">
       <Carousel interval={carouselInterval}>
@@ -180,7 +180,7 @@ function StudentsPlaced() {
           onMouseEnter={handleCarouselHover}
           onMouseLeave={handleCarouselLeave}
         >
-          <div className="d-flex flex-wrap  p-3 container">
+          <div className="d-flex flex-wrap  p-3 container-fluid">
           <div className="row w-100">
 
             {slideItems.map((item) => (

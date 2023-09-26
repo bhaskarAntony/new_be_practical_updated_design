@@ -6,6 +6,7 @@
 }
 .chat-area{
     background-color: #ccc !important;
+    z-index: 100;
 }
 .chatbot {
     position: fixed;

@@ -52,7 +52,7 @@ function Header() {
           <a class="nav-link" href='/events'>Events</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link">Gallery</a>
+          <a class="nav-link" href='/gallery'>Gallery</a>
         </li>
         <li class="nav-item">
           <a class="nav-link">Blogs</a>
