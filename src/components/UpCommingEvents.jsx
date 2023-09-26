@@ -32,7 +32,7 @@ function UpcomingEvents(props) {
           </div>
           <div className="row" key={index}>
           <div className="col-12 col-md-12 col-lg-6">
-            <div className="event-image bg-white rounded-3">
+            <div className="event-image p-2">
               <img src={event.image} alt={event.title} />
             </div>
           </div>
