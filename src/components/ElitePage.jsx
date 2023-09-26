@@ -39,23 +39,35 @@ function ElitePage() {
         <div className="row">
             <div className="col-12 col-md-4 col-lg-4">
                 <div className="highlight-card">
+                <div className="highlight-header">
                 <i class="bi bi-check-circle-fill"></i>
-                    <h2>100% Job Placement</h2>
+                </div>
+                   <div className="highlight-body">
+                   <h2>100% Job Placement</h2>
                     <p>Looking for a training institute that offers job placement Guarantee? Look no further! Because be practical Started Elite Program where every student get 100% Job placement. Our institute offers comprehensive training programs that equip you with the skills you need to succeed in your career.</p>
+                   </div>
                 </div>
             </div>
             <div className="col-12 col-md-4 col-lg-4">
                 <div className="highlight-card">
-                <i class="bi bi-cash"></i>
-                    <h2>50% refund If not Placed</h2>
+                    <div className="highlight-header">
+                    <i class="bi bi-cash"></i>
+                    </div>
+                   <div className="highlight-body">
+                   <h2>50% refund If not Placed</h2>
                     <p>Our Elite Program takes you to various Learning Paths to make you perfect for Industry Ready, If we fail to get you the job, 50% of the paid amount will be refunded.</p>
+                   </div>
                 </div>
             </div>
             <div className="col-12 col-md-4 col-lg-4">
                 <div className="highlight-card">
+                <div className="highlight-header">
                 <i class="bi bi-building-fill-check"></i>
-                    <h2>Batch Monitored by Company Experts.</h2>
+                </div>
+                  <div className="highlight-body">
+                  <h2>Batch Monitored by Company Experts.</h2>
                     <p>This Feature of the program makes you perfect for Job ready because you will be directly monitored by Company experts, where you will get a chance to know what our partnered clients are expecting from freshers so that it will help you restructure your learning skills and make you crack your dream job.</p>
+                  </div>
                 </div>
             </div>
         </div>
