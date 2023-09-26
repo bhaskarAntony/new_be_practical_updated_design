@@ -36,7 +36,7 @@ function Courses() {
     <section>
         <h1 className="banner-heading" data-aos="fade-up">Your Choice, Our Course</h1>
         <div className="full-screen-tabs">
-      <div className="container-fluid">
+      <div className="container-fluid p-0">
      <div className="main-nav">
      <ul className="nav nav-tabs custom-tabs">
         <li className="nav-item">

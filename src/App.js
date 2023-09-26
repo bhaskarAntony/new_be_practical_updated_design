@@ -16,7 +16,15 @@ import Events from './components/Events'
 function App() {
 
   return (
-    <div className='p-0 m-0'>
+    <div className='app'>
+     <div className='app-components'>
+     <div className='chat-bot'>
+      <img src='https://miro.medium.com/v2/resize:fit:910/0*KNC2_rgMbG1WVzsm.gif'/>
+     </div>
+     <div className='call'>
+     <i class="bi bi-telephone-fill"></i>
+     </div>
+     </div>
       <Header/>
      <BrowserRouter>
       <Routes>

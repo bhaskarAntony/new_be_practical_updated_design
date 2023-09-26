@@ -3,7 +3,7 @@ import '../styles/coursetab.css'
 
 function CourseTab() {
   return (
-    <div className='container-tab container-fluid '>
+    <div className='container-tab p-0'>
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#languages">Languages</a></li>

@@ -42,11 +42,6 @@ var adwantages = [
         heading:"INTERVIEW TIPS",
         description:"Dedicated HR to take care of interviews & Job.",
         icon:"https://cdn-icons-png.flaticon.com/128/8911/8911434.png",
-    },
-    {
-        heading:"DEDICATED HR",
-        description:"Before you join, you receive a complimentary HR session.",
-        icon:"https://cdn-icons-png.flaticon.com/128/8911/8911434.png",
     }
 ]
 function Adwantages() {
@@ -61,7 +56,7 @@ function Adwantages() {
             Mentoring for our full stack course starts long before a teacher gives an individual training session and continues long after the training session is over. Assessment, motivation, design, delivery, and evaluation are all connected stages or activities in this job guaranteed courses in Bangalore.</p>
        <div className="row">
        {adwantages.map((item, index) => (
-                        <div className="col-6 col-sm-6 col-md-4 col-lg-4" key={index}>
+                        <div className="col-6 col-sm-6 col-md-4 col-lg-3" key={index}>
                             <div className="adwantage-card mb-3 p-3" data-aos="zoom-in-down">
                                 <div className="adwantage-header">
                                     <img src={item.icon} alt="" />
