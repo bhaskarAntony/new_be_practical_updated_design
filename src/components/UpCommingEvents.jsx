@@ -26,6 +26,7 @@ const events = [
 function UpcomingEvents(props) {
   return (
     <div className='event'>
+      <h2 className="banner-heading">{props.heading}</h2>
       {props.events.map((event, index) => (
         <div className="event-card mb-5  p-lg-3 p-md-0 mb-3">
           <div className="event-blur">

@@ -59,10 +59,10 @@ function Events() {
     </TabList>
 
     <TabPanel>
-    <UpcomingEvents events={pastevents}/>
+    <UpcomingEvents events={pastevents} heading="Recent Events @ Be Practical"/>
     </TabPanel>
     <TabPanel>
-      <UpcomingEvents events={upcomingevents}/>
+      <UpcomingEvents events={upcomingevents} heading="Upcoming Events @ Be Practical"/>
     </TabPanel>
   </Tabs>
     </div>
