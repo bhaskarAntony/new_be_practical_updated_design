@@ -23,10 +23,10 @@ const events = [
   // Add more events here if needed
 ];
 
-function UpcomingEvents() {
+function UpcomingEvents(props) {
   return (
-    <div className=' event'>
-      {events.map((event, index) => (
+    <div className='event'>
+      {props.events.map((event, index) => (
         <div className="event-card mb-5  p-lg-3 p-md-0 mb-3">
           <div className="event-blur">
           </div>
