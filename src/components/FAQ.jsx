@@ -3,36 +3,8 @@
 import React, { useState } from 'react';
 import '../styles/FAQ.css'; // Import your CSS file
 
-const faqData = [
-  {
-    module: 'Web Wonders',
-    about: 'Answer to Question 1 goes here.',
-    description:"You will start with HTML, CSS, and JavaScript and then move on to learning data structures such as arrays, linked lists, and trees. You will also learn how to implement these data structures in JavaScript."
-  },
-  {
-    module: 'Javascript Jungle',
-    about: 'Answer to Question 1 goes here.',
-    description:"You will deepen your understanding of JavaScript and explore advanced concepts like object-oriented programming, closures, and asynchronous programming."
-  },
-  {
-    module: 'Web Wonders',
-    about: 'Answer to Question 1 goes here.',
-    description:""
-  },
-  {
-    module: 'Web Wonders',
-    about: 'Answer to Question 1 goes here.',
-    description:""
-  },
-  {
-    module: 'Web Wonders',
-    about: 'Answer to Question 1 goes here.',
-    description:""
-  }
-  // Add more FAQ items as needed
-];
 
-const FAQ = () => {
+const FAQ = (props) => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleAccordion = (index) => {
@@ -41,10 +13,11 @@ const FAQ = () => {
 
   return (
    <div className="container-fluid faq" id="faq">
+    <h1 className="banner-heading">Training Module</h1>
      <div className="container">
       <div className="row">
         <div className="col-12 col-md-12 col-lg-6">
-      {faqData.map((item, index) => (
+      {props.modules.map((item, index) => (
         <div
           className={`faq-item ${activeIndex === index ? 'active' : ''}`}
           key={index}
@@ -82,6 +55,9 @@ const FAQ = () => {
             </div>
         </div>
       </div>
+    </div>
+    <div className="carousel-footer d-flex justify-content-center">
+        <button className="join-btn p-3">Download Module PDF</button>
     </div>
    </div>
   );

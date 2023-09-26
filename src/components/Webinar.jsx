@@ -149,7 +149,7 @@ function Webinar() {
 
             {slideItems.map((item) => (
                 <div className="col-12 col-md-6 col-lg-4">
-              <div className="webinar-card" data-aos="zoom-in-left">
+              <div className="webinar-card bg-white" data-aos="zoom-in-left">
                 <div className="webinar-card-header text-white bg-black">
                         <img src={item.image} alt="" />
                 </div>

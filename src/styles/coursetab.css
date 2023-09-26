@@ -47,4 +47,7 @@
     .container-tab ul li a{
         font-size: 1em;
     }
+    .container-tab{
+        justify-content: center;
+    }
 }

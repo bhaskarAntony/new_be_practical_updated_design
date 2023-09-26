@@ -4,36 +4,31 @@
     --white-color:#fff;
     --black-color:#000;
 }
-.lan-container{
-    display: flex;
-    gap: 20px;
-    flex-flow: row wrap;
-}
-.lan{
-    background-color: var(--main-light-color);
-    color: var(--black-color);
-    padding: 5px;
-    border-radius: 100px;
-    margin: 0;
-    font-size: 0.9em !important;    
-}
 .course-card{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     position: relative;
     overflow: hidden;
     border: none !important;
     background-color: var(--white-color);
+    max-width: 350px;
 }
 .course-card .course-card-header{
     background: var(--white-color);
     position: relative;
-    min-height: 200px !important;
+    /* min-height: 150px !important; */
 }
-.course-card .course-card-header1{
+/* .course-card .course-card-header1{
     background: linear-gradient(45deg, #D80032, #713ABE);
-}
+} */
 .course-card-header{
     position: relative;
+}
+.course-card-header img{
+    width: 100%;
+    height: 100px;
+}
+.course-card-body p{
+    line-height: 1.2;
 }
 .curve{
     position: absolute;
@@ -49,15 +44,10 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(30px);
     left: 0;
     bottom: 0;
 }
-.blur img{
-    width: 100%;
-    height: 100%;
-}
-.course-card-header::before{
+/* .course-card-header::before{
     content: "";
     position: absolute;
     width: 100%;
@@ -66,7 +56,7 @@
     left: 0;
     top: 0;
     z-index: 9;
-}
+} */
 /* .course-card .course-card-header2{
     background: linear-gradient(45deg, #E55604, #FFB000);
 }
@@ -137,9 +127,9 @@
     transition: 0.8s;
     cursor: pointer;
 }
-.course-card[class*="bi-"]{
+.course-card-body [class*="bi-"]{
     font-size: 1.5em;
-    color: var(--main-color);
+    color: var(--main-color) !important;
 }
 
 .course-card-body{
@@ -151,12 +141,18 @@
     object-fit: cover;
 }
 .highlighter{
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     width:100%;
     display: flex;
     justify-content: space-between;
+    z-index: 10;
+}
+.course-header-text{
+    z-index: 11 !important;
+    position: absolute;
+    top: 80px;
 }
 .course-icons{
     display: flex;

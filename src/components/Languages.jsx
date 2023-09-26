@@ -11,7 +11,7 @@ function Languages(props) {
       <div className="languages-items">
         <div className="row">
           {props.languages.map((item, index) => (
-            <div className="col-6 col-md-4 col-lg-3" key={index}>
+            <div className="col-6 col-md-5 col-lg-3" key={index}>
               <div className="language-card" data-aos="zoom-in">
                 <div className="language-card-header">
                   <img src={item.image} alt="" />

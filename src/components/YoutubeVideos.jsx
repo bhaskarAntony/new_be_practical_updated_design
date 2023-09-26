@@ -170,7 +170,7 @@ function StudentsPlaced() {
     );
   }
   return (
-    <section className='bg-light p-2' id="placed">
+    <section className='bg-white p-2' id="placed">
         <h1 className="banner-heading" data-aos="fade-up"></h1>
         <p className="banner-subtitle text-secondary px-5" data-aos="fade-up">We don’t just give certification but outcomes!</p>
       <div className="students-placed">

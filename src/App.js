@@ -11,11 +11,12 @@ import DataScience from './components/DataScience'
 import DigitalMarket from './components/DigitalMarket'
 import CloudOops from './components/CloudOops'
 import H from './components/H'
+import Events from './components/Events'
 
 function App() {
 
   return (
-    <div>
+    <div className='p-0 m-0'>
       <Header/>
      <BrowserRouter>
       <Routes>
@@ -26,6 +27,7 @@ function App() {
         <Route path='/data-science' element={<DataScience/>}></Route>
         <Route path='/digital-marketing' element={<DigitalMarket/>}></Route>
         <Route path='/cloud-oops' element={<CloudOops/>}></Route>
+        <Route path='/events' element={<Events/>}></Route>
         <Route path='/*' element={<Home/>}></Route>
       </Routes>
      </BrowserRouter>

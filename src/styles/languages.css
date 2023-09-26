@@ -29,6 +29,16 @@
 }
 @media (max-width:528px){
     .language-card img{
-        width: 100%;
+        width: 80px;
+        height: 80px;
     }
+}
+
+@media (max-width:768px){
+    .language-card{
+        min-width: fit-content;
+    }
+    /* .language-card img{
+        width: 100px;
+    } */
 }

@@ -50,6 +50,34 @@ var languages =[
         image:"https://cdn-icons-png.flaticon.com/128/2906/2906274.png"
     }
 ]
+const Mern_module = [
+    {
+      module: 'Web Wonders',
+      about: 'Answer to Question 1 goes here.',
+      description:"You will start with HTML, CSS, and JavaScript and then move on to learning data structures such as arrays, linked lists, and trees. You will also learn how to implement these data structures in JavaScript."
+    },
+    {
+      module: 'Javascript Jungle',
+      about: 'Answer to Question 1 goes here.',
+      description:"You will deepen your understanding of JavaScript and explore advanced concepts like object-oriented programming, closures, and asynchronous programming."
+    },
+    {
+      module: 'Web Wonders',
+      about: 'Answer to Question 1 goes here.',
+      description:""
+    },
+    {
+      module: 'Web Wonders',
+      about: 'Answer to Question 1 goes here.',
+      description:""
+    },
+    {
+      module: 'Web Wonders',
+      about: 'Answer to Question 1 goes here.',
+      description:""
+    }
+    // Add more FAQ items as needed
+  ];
 var card = [
     {
         image:"https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -164,7 +192,7 @@ function Mearn() {
             </div>
       </section>
  <CourseCompany/>
-<FAQ/>
+<FAQ modules={Mern_module}/>
       <StudentsPlaced/>
      
       <h1 className="banner-heading" data-aos="fade-up">Adwantages @ Be Practical</h1>

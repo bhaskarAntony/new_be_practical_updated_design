@@ -57,22 +57,20 @@ function AllCourses() {
       }, []);
     return (
         <div className='container-fluid'>
-            <div className="row flex-wrap d-flex justify-content-center">
+            <div className="row flex-wrap d-flex justify-content-center align-items-center">
                 {courses.map((item, index) => (
-                      <div className="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                      <div className="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 d-flex justify-content-center">
                       <div className="card course-card" data-aos="zoom-in">
-                      <div className={`course-card-header p-2 d-flex align-items-end bg-primary justify-content-between course-card-header${item.id}`}>
-                        <div className="header-img">
-                            
-                        </div>
-                        <div className="course-header-text text-white text-end">
+                      <div className={`course-card-header p-2 d-flex align-items-end bg-black justify-content-between course-card-header${item.id}`}>
+                      {/* <img src="https://media.istockphoto.com/id/1193323373/vector/a-colorful-trendy-card-design-vector-illustration.jpg?s=612x612&w=0&k=20&c=iIqY56kV1nKpfKCceag5NFWBnogRv8ZmJCFiicZxlpU=" alt="" /> */}
+                        {/* <div className="course-header-text text-white text-end">
                             <h4>{item.name}</h4>
-                        </div>
-                        <div className="curve">
+                        </div> */}
+                        {/* <div className="curve">
 
-                        </div>
+                        </div> */}
                         <div className="blur">
-                        <img src="https://media.istockphoto.com/id/1193323373/vector/a-colorful-trendy-card-design-vector-illustration.jpg?s=612x612&w=0&k=20&c=iIqY56kV1nKpfKCceag5NFWBnogRv8ZmJCFiicZxlpU=" alt="" />
+                       
                         </div>
                            <div className="highlighter p-2">
                             <p className="p-1 px-3 text-white bg-primary rounded-5"><i class="bi bi-fire"></i>{item.tag}</p>
@@ -87,24 +85,39 @@ function AllCourses() {
                           </div>
                       </div>
                       <div className="course-card-body p-2">
-                        <h5 className='text-black'>{item.name}</h5>
-                        <p><small><i class="bi bi-clock-history text-secondry"></i> {item.duration}</small></p>
+                        <h4 className='text-black fw-bold'>{item.name}</h4>
+                        <hr />
+                        {/* <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit nesciunt, et eveniet, similique obcaecati delectus quae iusto impedit iste aspernatur architecto unde molestias eius quas in atque dignissimos ipsum odio?</p> */}
+                        <div className="row">
+                        <div className="col-6 p-2 text-center d-flex align-items-center">
+                            <i class="bi bi-clock  mx-2 fs-4"></i>
+                            <p>{item.duration}</p>
+                            </div>
+                            <div className="col-6 p-2 text-center d-flex align-items-center">
+                            <i class="bi bi-camera-video  mx-2 fs-4"></i>
+                            <p>Online and offline classes</p>
+                            </div>
+                            <div className="col-6 p-2 text-center d-flex align-items-center">
+                            <i class="bi bi-mortarboard  mx-2 fs-4"></i>
+                            <p>Job Assurance</p>
+                            </div>
+                            <div className="col-6 p-2 text-center d-flex align-items-center">
+                            <i class="bi bi-person-lines-fill mx-2 fs-4"></i>
+                            <p>HR activities</p>
+                            </div>
+                        </div>
+                        
                         {/* <p><small>{item.trainer}</small></p> */}
-                        <p><small><i class="bi bi-camera-video-fill text-secondary"></i> Live classes</small></p>
+                        
                       </div>
                       <div className="course-footer p-2 m-0">
-                       <i> <small>Reviews</small></i>
-                       <div className="ratings_course d-flex align-items-center">
-                       <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <small>{item.rating} ({item.ratedStudents})</small>
+                      
+                       <div className="carousel-footer">
+                        <button className="join-btn p-2 w-100 rounded-0">enroll Now</button>
                        </div>
                        
                       </div>
-                      <div className="thumb-layout">
+                      {/* <div className="thumb-layout">
                         <img src={item.icon} alt="" />
                         <h4>Enroll Now This {item.name}</h4>
                         <p>Build Your Careere With {item.name}</p>
@@ -113,7 +126,7 @@ function AllCourses() {
                         <button className="enroll-btn">Enroll</button>
                         <button className="enquire-btn">Enquire</button>
                       </div>
-                      </div>
+                      </div> */}
                       </div>
                   </div>
                 ))}
