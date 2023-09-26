@@ -1,0 +1,20 @@
+:root{
+    --main-color:rgb(240 0 55/1);
+    --main-light-color:rgb(252 244 245/1);
+    --white-color:#fff;
+    --black-color:#000;
+}
+.benifits-component-card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+    text-align: center;
+    min-height: 250px;
+    margin-bottom: 20px;
+}
+.benifits-component-card img{
+    width: 80px;
+    height: 80px;
+}
+.benifits-component-card h4{
+    color: var(--main-color);
+}

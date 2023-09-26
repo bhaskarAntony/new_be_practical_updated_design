@@ -14,6 +14,7 @@ import H from './components/H';
 import Events from './components/Events';
 import Bot from './components/Bot';
 import Gallery from './components/Gallery';
+import ContactPage from './components/ContactPage';
 
 function App() {
   const [isChatbotVisible, setIsChatbotVisible] = useState(false);
@@ -52,6 +53,7 @@ function App() {
           <Route path='/cloud-oops' element={<CloudOops />} />
           <Route path='/events' element={<Events />} />
           <Route path='/gallery' element={<Gallery />} />
+          <Route path='/contacts' element={<ContactPage />} />
           <Route path='/*' element={<Home />} />
         </Routes>
       </BrowserRouter>

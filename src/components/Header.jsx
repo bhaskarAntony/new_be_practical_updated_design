@@ -45,7 +45,7 @@ function Header() {
           </a>
           <ul class="dropdown-menu list-group">
             <li className='list-group-item'><a class="dropdown-item" href="#">Why Be Practical?</a></li>
-            <li className='list-group-item'><a class="dropdown-item" href="#">Contact Us</a></li>
+            <li className='list-group-item'><a class="dropdown-item" href="/contacts">Contact Us</a></li>
           </ul>
         </li>
         <li class="nav-item">
@@ -64,7 +64,7 @@ function Header() {
           <ul class="dropdown-menu">
             <li className='list-group-item'><a class="dropdown-item" href="#">Corporate Training</a></li>
             <li className='list-group-item'><a class="dropdown-item" href="#">HR Services</a></li>     
-            <li className='list-group-item'><a class="dropdown-item" href="#">Hire Trained Graduates</a></li>   
+            <li className='list-group-item'><a class="dropdown-item" href="/contacts">Hire Trained Graduates</a></li>   
           </ul>
         </li>
       </ul>
