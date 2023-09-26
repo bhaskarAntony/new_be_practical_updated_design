@@ -43,7 +43,6 @@ const benifits = [
     description: "Our programs are designed to make students job-ready from day one. They have a strong understanding of software development practices, making the onboarding process smoother for companies."
   }
 ];
-
 function Benifits() {
   return (
     <div className='container-fluid'>

@@ -3,7 +3,7 @@ import '../styles/register_card.css'
 
 function RegisterBox() {
     const [isopen, setIsopen] = useState(true)
-
+ 
   return (
     <div className='register-card p-2 bg-white py-4 rounded-4'>
       <p className="fs-3 mb-3 fw-bold">Schedule a demo call with our placement team</p>
