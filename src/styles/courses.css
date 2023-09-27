@@ -1,74 +1,50 @@
-:root{
-    --main-color:rgb(240 0 55/1);
-    --main-light-color:rgb(252 244 245/1);
-    --white-color:#fff;
-    --black-color:#000;
-}
-.full-screen-tabs {
-    display: flex;
-    flex-direction: column;
-    min-height: fit-content;
-    background-color: var(--white-color); /* Background color for the full-screen container */
-    box-sizing: border-box;
-  }
-  .main-nav{
-    display: flex;
-    min-width: 100% !important;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-    border-top: 1px solid #c8c7c7;
-    padding:  5px 10px;
-    flex-flow: row wrap;
-    justify-content: space-between;
-  }
-  .full-screen-tabs .nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--white-color);
-    flex-flow: row nowrap;
-    overflow: auto;
-    border: none;
+/* RoundedTabs.css */
 
-  }
-  .apply-btn{
-    border: none;
-    padding: 8px 10px;
-    color: var(--white-color);
-    background-color: var(--main-color);
-    border-radius: 5px;
-    letter-spacing: 1.5px;
-    height: fit-content;
-    width: 150px;
-  }
-.full-screen-tabs .nav-item{
-    min-width: fit-content;
-    margin-bottom: 20px;
-    text-align: center;
-    cursor: pointer;
+/* Container styling */
+.rounded-tabs-container {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-@media (max-width:768px){
-    .full-screen-tabs .nav-item{
-        width: fit-content;
-    }
+
+/* Tab list styling */
+.rounded-tab-list {
+  background-color: #f0f0f0;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px 15px 0 0;
+  list-style-type: none;
 }
-.full-screen-tabs .nav-link{
-    color: var(--black-color);
-    width: fit-content;
+
+/* Individual tab styling */
+.rounded-tab {
+  background-color: #007bff; /* Tab background color */
+  color: #fff; /* Tab text color */
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 50px; /* Rounded corners for tabs */
+  cursor: pointer;
 }
-.full-screen-tabs .nav-link{
-    font-size: 1rem !important;
+
+/* Panel styling */
+.react-tabs__tab-panel {
+  padding: 20px;
 }
-.full-screen-tabs .nav-link:hover{
-    background-color: transparent;
-    border: none; /* Change to your desired background color */
-    color: var(--main-color)!important; /* Change to your desired text color */
-    border-bottom: 2px solid var(--main-color) !important;
+
+/* Media query for screens with a width of 600px or less */
+@media (max-width: 600px) {
+  /* Adjust styles for smaller screens if needed */
 }
-.full-screen-tabs .nav-link.active {
-    background-color: transparent;
-    border: none; /* Change to your desired background color */
-    color: var(--main-color)!important; /* Change to your desired text color */
-    border-bottom: 2px solid var(--main-color) !important;
-    font-weight: 600;
-  }
+/* Active tab styling */
+.active-tab {
+  background-color: #ff6347; /* Change the background color for the active tab */
+  color: #fff; /* Change the text color for the active tab */
+  border-radius: 15px 15px 0 0; /* Ensure rounded corners for the active tab */
+}
+
+/* Active tab panel styling */
+.active-tab-panel {
+  padding: 20px;
+  border-radius: 0 0 15px 15px; /* Ensure rounded corners for the active tab panel */
+}

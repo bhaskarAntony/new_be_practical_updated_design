@@ -9,6 +9,7 @@ import CourseCompany from './CourseCompany'
 import AOS from 'aos';
 import CourseTab from './CourseTab'
 import ChatBotContainer from './ChatBotContainer'
+import CourseOverview from './CourseOverview'
 
 var languages =[
     {
@@ -52,6 +53,12 @@ var card = [
         duration:"4.5 Months",
         enrolled:"100+ Students",
         mode:"Online And Offline"
+    }
+]
+const overview = [
+    {
+        course_description:"The program suits For College Students, Freshers. And professionals of all levels and disciplines, and will prepare you to take up a more specialist role within the overall Data Science domain.",
+        certification:"Through these training programs, learners gain hands-on experience working with various technologies used in the field, including popular programming languages such as R and Python, as well as data processing and storage systems such as Hadoop and Spark. In addition, learners may also receive training on popular data visualization tools such as Tableau.",
     }
 ]
 function Java() {
@@ -144,8 +151,7 @@ function Java() {
             </div>
         </div>
       </div>
-      <CourseTab/>
-      <StudentsPlaced/>
+      <CourseOverview overview={overview}/>
       <h1 className="banner-heading" data-aos="fade-up">What Programming Languages You will Learn?</h1>
       <section className='main-lan-container container-fluid bg-light py-2'>
             <div className="lan-inner-container">
@@ -159,10 +165,11 @@ function Java() {
                 </div>
             </div>
       </section>
+
       <CourseCompany/>
+      <StudentsPlaced/>
       <h1 className="banner-heading" data-aos="fade-up">Adwantages @ Be Practical</h1>
       <Adwantages/>
-      <ChatBotContainer/>
       <h1 className="banner-heading" data-aos="fade-up">What Students says About Course?</h1>
       <Feedback/>
     </section>
