@@ -12,14 +12,10 @@ import StudentsPlaced from './StudentsPlaced';
 import AOS from 'aos';
 import Skills from './Skills';
 import Elite from './Elite';
-import Bot from './Bot';
-import ChatBotContainer from './ChatBotContainer';
 import DialogModel from './DialogModel';
-import bg from '../images/website home section.svg'
-import bg1 from '../images/bgg-home.svg'
+import bg from '../images/banner-img.png'
 import YoutubeVideos from '../components/YoutubeVideos'
 import Webinar from './Webinar';
-import H from './H';
 
 function Home() {
 

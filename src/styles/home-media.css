@@ -45,9 +45,16 @@
       }
 
 }
-@media (min-width: 768px){
+@media (max-width: 768px){
 .carousel-footer .join-btn, .carousel-footer .book-btn, .enrol-btn, .register-btn{
     font-size: 1.125rem;
     line-height: 1.75rem;
+}
+.home{
+    /* background: url('../images/mobile\ background.svg') no-repeat center top;
+    background-size: contain; */
+}
+.home-right{
+    min-height: fit-content;
 }
 }

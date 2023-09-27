@@ -27,7 +27,7 @@
 }
 .banner-heading{
   width: fit-content;
-  /* background: url(https://www.almabetter.com/_next/static/media/section-title-underline-decoration.25fa90ef.svg) no-repeat bottom left; */
+
   padding: 50px;
   font-weight: 600;
   padding-bottom: 15px !important;
@@ -124,6 +124,8 @@
 }
 .home {
   position: relative;
+  /* background: url('../images/website\ banner.svg') no-repeat  center top;
+  background-size: contain; */
 }
 .blurer{
   position: absolute;
