@@ -1,10 +1,15 @@
 import React from 'react'
 import '../styles/elite-page.css'
 import Elite from './Elite'
+import eliteVideo from '../images/elite-bg.mp4'
 import Adwantages from './Adwantages'
 
 function ElitePage() {
   return (
+<>
+<div className="elite-video">
+    <video src={eliteVideo} autoPlay muted></video>
+  </div>
    <div className="elite-main-page overflow-hidden">
      <div className='elite-page container-fluid p-0'>
      <div className="row">
@@ -75,6 +80,7 @@ function ElitePage() {
     <div className="container elite-devider"></div>
     <Adwantages/>
    </div>
+</>
   )
 }
 

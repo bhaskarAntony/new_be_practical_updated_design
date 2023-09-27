@@ -226,3 +226,12 @@
 .highlight-body{
     padding: 20px;
 }
+.elite-video{
+    width: 100%;
+    min-height: 100vh;
+
+}
+.elite-video video{
+    width: 100%;
+    object-fit: cover;
+}

@@ -16,6 +16,7 @@ import DialogModel from './DialogModel';
 import bg from '../images/banner-img.png'
 import YoutubeVideos from '../components/YoutubeVideos'
 import Webinar from './Webinar';
+import CardSlider from '../styles/CardSlider';
 
 function Home() {
 
@@ -199,9 +200,11 @@ function Home() {
       <Training/>
        <Companies/>
       <Activities/>
-      <h1 className="banner-heading" data-aos="fade-up">Meet Our Students</h1>
-      <Feedback/>
+      <h1 className="banner-heading" data-aos="fade-up">Why You Choose BE Practical?</h1>
+      <Skills/>
+
       <h1 className="banner-heading" data-aos="fade-up">Adwantages @ Be Practical</h1>
+      {/* <CardSlider/> */}
       <Adwantages/>
       <section className="quote-container container-fluid">
             <div className="quote-inner container" data-aos="fade-up">
@@ -233,11 +236,13 @@ function Home() {
             </div>
            
       </section>
+      <Webinar/>
+
+      <h1 className="banner-heading" data-aos="fade-up">Meet Our Students</h1>
+      <Feedback/>
       <StudentsPlaced/>
       {/* <ChatBotContainer/> */}
-      <h1 className="banner-heading" data-aos="fade-up">Why You Choose BE Practical?</h1>
-      <Skills/>
-      <Webinar/>
+
             <YoutubeVideos/>
     
     </div>
