@@ -107,13 +107,13 @@ function Home() {
       <div className="carousal-text">
         <div className="row">
           <div className="col-12 col-md-12 col-lg-6">
-            <div className="home-text">
+            <div className="home-text py-3">
               <h1 className="main-heading">{item.heading}</h1>
               <p className="subtitle">{item.subheading}</p>
             </div>
             <div className="carousel-footer">
-              <button className='btn p-3 bg-warning fw-bold' data-aos="fade-up">Join For Free</button>
-              <button className='btn p-3  bg-warning fw-bold' data-aos="fade-up">Book Your Free Master Classes</button>
+              <button className='btn p-3 bg-warning fw-bold w-md-100 home-btn' data-aos="fade-up">Join For Free</button>
+              <button className='btn p-3  bg-warning fw-bold w-md-100 home-btn' data-aos="fade-up">Book Your Free Master Classes</button>
             </div>
           </div>
           <div className="col-12 col-md-12 col-lg-6">
@@ -138,7 +138,7 @@ function Home() {
             ))}
           </div>
         </div>
-        <div className="register-container-home bg-white">
+        <div className="register-container-home bg-white rounded-2">
         <div className="register align-items-center rounded-2 p-3">
           <div className="p-2 rounded-2 py-3 border-0 bg-tranparent">
             <div className="card-header-text text-center w-100">

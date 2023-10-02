@@ -64,7 +64,7 @@ function StudentsPlaced() {
     useEffect(() => {
         AOS.init(); // Initialize AOS
       }, []);
-    const [itemsPerSlide, setItemsPerSlide] = useState(3);
+    const [itemsPerSlide, setItemsPerSlide] = useState(4);
     const [carouselInterval, setCarouselInterval] = useState(3000);
     const [carouselPaused, setCarouselPaused] = useState(false);
   
@@ -79,7 +79,7 @@ function StudentsPlaced() {
             setItemsPerSlide(2);
             setCarouselInterval(2000);
           } else {
-          setItemsPerSlide(3);
+          setItemsPerSlide(4);
           setCarouselInterval(3000);
         }
       };
@@ -152,11 +152,11 @@ function StudentsPlaced() {
           onMouseEnter={handleCarouselHover}
           onMouseLeave={handleCarouselLeave}
         >
-          <div className="d-flex flex-wrap  p-3 container">
+          <div className="d-flex flex-wrap  p-3 container-fluid">
           <div className="row">
 
             {slideItems.map((item) => (
-                <div className="col-12 col-md-6 col-lg-4">
+                <div className="col-12 col-md-6 col-lg-3">
               <div className="placed-card" data-aos="zoom-in-left">
                 <div className="placed-card-header text-white">
                     <p><i><ReadMore text={item.description} maxLength={50} /></i></p>

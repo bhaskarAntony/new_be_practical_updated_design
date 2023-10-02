@@ -51,7 +51,7 @@ function Elite() {
           </div>
         </div>
         </div>
-        <button className="register-btn p-3 px-5">Join Now</button>
+        <button className="btn bg-white p-2 px-5 fs-4 rounded-5">Join Now</button>
       </div>
     </section>
   )

@@ -30,7 +30,7 @@ function Activities() {
         AOS.init(); // Initialize AOS
       }, []);
     return (
-        <section className='container-fluid p-2 overflow-hidden p-lg-4 p-2'>
+        <section className='container-fluid p-2 overflow-hidden p-lg-4 p-2 bg-light '>
             <h3 className="banner-heading" data-aos="fade-up">Placement Activities</h3>
             <div className="row">
                 <div className="col-12 col-md-6 col-lg-7">

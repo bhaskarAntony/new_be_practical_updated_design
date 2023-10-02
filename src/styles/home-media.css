@@ -50,11 +50,7 @@
     font-size: 1.125rem;
     line-height: 1.75rem;
 }
-.home{
-    /* background: url('../images/mobile\ background.svg') no-repeat center top;
-    background-size: contain; */
-}
-.home-right{
-    min-height: fit-content;
+.home-btn{
+    min-width: 100%;
 }
 }

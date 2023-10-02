@@ -51,7 +51,7 @@
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: #ccc; /* Inactive indicator color */
+    background-color: #fff; /* Inactive indicator color */
     margin: 0 5px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -94,7 +94,7 @@
   color: #fff;
 }
 .home{
-  background-color: #4D2DB7;
+  background-color: #35013F;
   padding-bottom: 20px;
 }
 .main-heading{
@@ -109,6 +109,7 @@
   overflow: hidden;
   z-index: 10;
   /* margin-bottom: -100% !important; */
+  border-radius: 10px;
 
 }
 .register::before{

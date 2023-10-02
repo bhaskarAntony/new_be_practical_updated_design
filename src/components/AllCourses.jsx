@@ -56,12 +56,14 @@ function AllCourses() {
         AOS.init(); // Initialize AOS
       }, []);
     return (
-        <div className='container-fluid'>
+        <div className='container'>
             <div className="row flex-wrap d-flex justify-content-center align-items-center">
                 {courses.map((item, index) => (
-                      <div className="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 d-flex justify-content-center">
-                      <div className="card course-card" data-aos="zoom-in">
-                      <div className={`course-card-header p-2 d-flex align-items-end bg-black justify-content-between course-card-header${item.id}`}>
+                      <div className="col-12 col-sm-6 col-md-6 col-lg-6 mb-3 d-flex justify-content-center">
+                      <div className="card course-card border" data-aos="zoom-in">
+                        <div className="row">
+                            <div className="col-12 cl-md-5 col-lg-4">
+                            <div className={`course-card-header p-2 d-flex align-items-end bg-black justify-content-between course-card-header${item.id}`}>
                       <img src="https://media.istockphoto.com/id/1193323373/vector/a-colorful-trendy-card-design-vector-illustration.jpg?s=612x612&w=0&k=20&c=iIqY56kV1nKpfKCceag5NFWBnogRv8ZmJCFiicZxlpU=" alt="" />
                         <div className="curve">
 
@@ -81,7 +83,9 @@ function AllCourses() {
                            </div>
                           </div>
                       </div>
-                      <div className="course-card-body p-2">
+                            </div>
+                            <div className="col-12 col-md-7 col-lg-8">
+                     <div className="course-card-body p-2">
                         <h4 className='text-black fw-bold'>{item.name}</h4>
                         <hr />
                         {/* <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit nesciunt, et eveniet, similique obcaecati delectus quae iusto impedit iste aspernatur architecto unde molestias eius quas in atque dignissimos ipsum odio?</p> */}
@@ -110,10 +114,14 @@ function AllCourses() {
                       <div className="course-footer p-2 m-0">
                       
                        <div className="carousel-footer">
-                        <button className="btn p-2 w-100 rounded-0 bg-warning">enroll Now</button>
+                        <button className="join-btn p-2 w-100 rounded-0">enroll Now</button>
                        </div>
                        
                       </div>
+                     </div>
+                        </div>
+                     
+                    
                       {/* <div className="thumb-layout">
                         <img src={item.icon} alt="" />
                         <h4>Enroll Now This {item.name}</h4>

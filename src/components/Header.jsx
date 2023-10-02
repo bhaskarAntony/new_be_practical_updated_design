@@ -76,7 +76,7 @@ function Header() {
         </li>
       </ul>
        
-        <button class="nav-apply-btn w-25" type="button">Apply Now</button>
+        <button class="nav-apply-btn w-25 bg-warning" type="button">Apply Now</button>
     </div>
   </div>
 </nav>

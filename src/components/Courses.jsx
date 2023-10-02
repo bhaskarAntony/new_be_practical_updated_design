@@ -21,10 +21,10 @@ function Courses() {
       <Tab className="custom-tab">Start Learning</Tab>
     </TabList>
 
-    <TabPanel className="courses-container">
+    <TabPanel className="courses-container py-3">
     <TrendingCourses/>
     </TabPanel>
-    <TabPanel>
+    <TabPanel className="py-3">
       <AllCourses/>
     </TabPanel>
     <TabPanel>
