@@ -72,4 +72,7 @@
 .home-bottom-wave{
     display: none;
   }
+  .home-text{
+    width: 100%;
+  }
 }
