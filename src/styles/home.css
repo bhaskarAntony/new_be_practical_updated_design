@@ -70,6 +70,8 @@
     gap: 20px;
     width: 100%;
     margin-top: 20px;
+    align-items: center;
+    justify-content: center;
 }
   .carousel-footer .join-btn, .carousel-footer .book-btn, .enrol-btn, .register-btn{
         border: none;
@@ -95,9 +97,21 @@
   color: #fff;
 }
 .home{
-
-  background-color: #05595B;
+  background: linear-gradient(45deg, #05595B, #055a5b42), url('../images/image-home-bg.svg') no-repeat center top;
+  background-size: cover;
+  /* background-color: #05595B; */
   padding-bottom: 20px;
+  min-height: 100vh;
+
+
+}
+.custom-carousel{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  backdrop-filter: blur(5px);
+
 }
 .home-bottom-wave{
   min-height: 200px;
@@ -110,6 +124,17 @@
 }
 .home .subtitle{
   color: #fff;
+}
+.carousal-text{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.home-text{
+  width: 80%;
 }
 .home-image{
   /* background: url('../images/course-bg.svg') no-repeat center;

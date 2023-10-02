@@ -105,8 +105,6 @@ function Home() {
   home.map((item, index) => (
     <Carousel.Item key={index}>
       <div className="carousal-text">
-        <div className="row">
-          <div className="col-12 col-md-12 col-lg-6">
             <div className="home-text py-3">
               <h1 className="main-heading">{item.heading}</h1>
               <p className="subtitle">{item.subheading}</p>
@@ -115,13 +113,6 @@ function Home() {
               <button className='btn p-3 bg-warning fw-bold w-md-100 home-btn'>Join For Free</button>
               <button className='btn p-3  bg-warning fw-bold w-md-100 home-btn'>Book Your Free Master Classes</button>
             </div>
-          </div>
-          <div className="col-12 col-md-12 col-lg-6">
-            <div className="home-image">
-              <img src={item.image} className="w-100 img-fluid" alt="" />
-            </div>
-          </div>
-        </div>
       </div>
     </Carousel.Item>
   ))
@@ -188,7 +179,7 @@ function Home() {
         </div>
        </section>
        <div className="home-bottom-wave">
-        
+
        </div>
       <Courses/>
       <h3 className="banner-heading">Join Our Elite Program</h3>
