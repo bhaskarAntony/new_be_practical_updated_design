@@ -8,10 +8,11 @@
     color: var(--white-color) !important;
 }
 .course-card .course-card-header{
-    background: var(--white-color);
+    background: var(--main-color);
     position: relative;
     overflow: hidden;
     min-height: 150px;
+    text-align: center;
 }
 .course-card-header img{
     width: 100%;
