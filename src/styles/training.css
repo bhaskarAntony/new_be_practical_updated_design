@@ -1,10 +1,4 @@
 
-:root{
-    --main-color:rgb(240 0 55/1);
-    --main-light-color:rgb(252 244 245/1);
-    --white-color:#fff;
-    --black-color:#000;
-}
 .training-card{
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;

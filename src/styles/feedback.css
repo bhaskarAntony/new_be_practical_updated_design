@@ -1,12 +1,4 @@
-:root{
-    --blue-color:#6440fb;
-    --blue-light-color:#6540fb21;
-    --blue-dark-color:#140342;
-    --green-color:#00ff84;
-    --black-color:#000;
-    --white-color:#fff;
-    --gray-color:#878787;
-}
+
 .feedback{
     display: flex;
     align-items: center;

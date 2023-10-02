@@ -31,7 +31,7 @@ function Activities() {
       }, []);
     return (
         <section className='container-fluid p-2 overflow-hidden p-lg-4 p-2'>
-            <h1 className="banner-heading" data-aos="fade-up">Placement Activities</h1>
+            <h3 className="banner-heading" data-aos="fade-up">Placement Activities</h3>
             <div className="row">
                 <div className="col-12 col-md-6 col-lg-7">
                     <div className="activities-text">
@@ -39,7 +39,7 @@ function Activities() {
                             {activities.map((item, index) => (
                                     <li key={index} className='mt-5' data-aos="fade-up"
                                     data-aos-anchor-placement="bottom-center">
-                                    <h3 className="activity-heading" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="bi bi-check2-square"></i> {item.heading} <i class="bi bi-caret-down-fill"></i></h3>
+                                    <span className="activity-heading fs-5" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="bi bi-check2-square"></i> {item.heading} <i class="bi bi-caret-down-fill"></i></span>
                                     
                                     <div class="collapse collapse-card" id="collapseExample">
                                     <p className="activity-description"><small>{item.description}</small></p>

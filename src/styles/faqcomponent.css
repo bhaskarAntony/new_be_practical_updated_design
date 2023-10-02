@@ -1,0 +1,25 @@
+/* Example styling */
+.App {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  /* Customize FAQ styling */
+  .card {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .card-header {
+    background-color: #f8f9fa;
+  }
+  
+  .card-body {
+    padding: 15px;
+  }
+  

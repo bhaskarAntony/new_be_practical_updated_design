@@ -10,7 +10,6 @@ import Java from './components/Java';
 import DataScience from './components/DataScience';
 import DigitalMarket from './components/DigitalMarket';
 import CloudOops from './components/CloudOops';
-import H from './components/H';
 import Events from './components/Events';
 import Bot from './components/Bot';
 import Gallery from './components/Gallery';

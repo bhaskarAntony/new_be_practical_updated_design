@@ -46,7 +46,7 @@ const benifits = [
 function Benifits() {
   return (
     <div className='container-fluid'>
-        <h2 className="banner-heading">benefits of hiring our trained students</h2>
+        <h3 className="banner-heading">benefits of hiring our trained students</h3>
       <div className="row">
         {benifits.map((item, index) => (
           <div className="col-12 col-lg-6 col-md-6" key={index}>

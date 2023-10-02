@@ -125,7 +125,7 @@ function StudentsPlaced() {
           <div>
             {text.slice(0, maxLength)}
             {text.length > maxLength && (
-              <p onClick={toggleTruncate} className="read-more-button text-danger">
+              <p onClick={toggleTruncate} className="read-more-button text-warning">
                 Read More
               </p>
             )}
@@ -133,7 +133,7 @@ function StudentsPlaced() {
         ) : (
           <div>
             {text}
-            <p onClick={toggleTruncate} className="read-less-button text-danger">
+            <p onClick={toggleTruncate} className="read-less-button text-warning">
               Read Less
             </p>
           </div>
@@ -143,7 +143,7 @@ function StudentsPlaced() {
   }
   return (
     <section className='bg-light p-2' id="placed">
-        <h1 className="banner-heading" data-aos="fade-up">Transforming careers with Our 100% Job Guarntee Program</h1>
+        <h3 className="banner-heading" data-aos="fade-up">Transforming careers with Our 100% Job Guarntee Program</h3>
         <p className="banner-subtitle text-secondary px-5" data-aos="fade-up">We don’t just give certification but outcomes!</p>
       <div className="students-placed">
       <Carousel interval={carouselInterval}>
@@ -158,7 +158,7 @@ function StudentsPlaced() {
             {slideItems.map((item) => (
                 <div className="col-12 col-md-6 col-lg-4">
               <div className="placed-card" data-aos="zoom-in-left">
-                <div className="placed-card-header text-white bg-black">
+                <div className="placed-card-header text-white">
                     <p><i><ReadMore text={item.description} maxLength={50} /></i></p>
                     <div className="profile">
                         <img src={item.profile} alt="" />

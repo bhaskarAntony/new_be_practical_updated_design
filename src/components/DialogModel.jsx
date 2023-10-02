@@ -23,9 +23,6 @@ function DialogModel({ show, handleClose }) {
       <div className="register-card">
        <div className="text-center">
        {/* <img src="https://abhirajchatterjee.netlify.app/images/hello-transparent-2.gif" alt="" /> */}
-         <h4>Ask to Chat
-       
-        </h4>
        </div>
         <Form.Label>Can i Know your name?</Form.Label>
         <Form.Group controlId="floatingInput" claaName="mt-2">

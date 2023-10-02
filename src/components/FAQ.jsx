@@ -13,7 +13,7 @@ const FAQ = (props) => {
 
   return (
    <div className="container-fluid faq" id="faq">
-    <h1 className="banner-heading">Training Module</h1>
+    <h3 className="banner-heading">Training Module</h3>
      <div className="container">
       <div className="row">
         <div className="col-12 col-md-12 col-lg-6">

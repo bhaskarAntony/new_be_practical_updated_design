@@ -3,7 +3,7 @@ import React from 'react'
 function CourseOverview(props) {
   return (
    <>
-   <h2 className="banner-heading">Course Overview</h2>
+   <h3 className="banner-heading">Course Overview</h3>
    <section className='p-2 py-3'>
      {
         props.overview.map((item, index)=>{

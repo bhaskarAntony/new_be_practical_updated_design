@@ -152,7 +152,7 @@ function Python() {
         </div>
       </div>
       <StudentsPlaced/>
-      <h1 className="banner-heading">What Programming Languages You will Learn?</h1>
+      <h3 className="banner-heading">What Programming Languages You will Learn?</h3>
       <section className='main-lan-container container-fluid bg-light py-2'>
             <div className="lan-inner-container">
                 <div className="row">
@@ -167,9 +167,9 @@ function Python() {
       </section>
       <CourseOverview overview={overview}/>
       <CourseCompany/>
-      <h1 className="banner-heading">Adwantages @ Be Practical</h1>
+      <h3 className="banner-heading">Adwantages @ Be Practical</h3>
       <Adwantages/>
-      <h1 className="banner-heading">What Students says About Course?</h1>
+      <h3 className="banner-heading">What Students says About Course?</h3>
       <Feedback/>
     </section>
   )

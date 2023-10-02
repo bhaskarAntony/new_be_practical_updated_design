@@ -75,7 +75,7 @@ function Companies() {
   return (
     <section className='container-fluid main-company-container'>
     <div className="companies container-fluid text-center rounded-2">
-      <h2 className="banner" data-aos="fade-up">Boost Your Career With Our Hiring Partners</h2>
+      <h3 className="banner" data-aos="fade-up">Boost Your Career With Our Hiring Partners</h3>
       <p className="banner-subtitle text-secondary" data-aos="fade-up">
         Get closer to your dream company <br />
         Our graduates are working with leading tech brands

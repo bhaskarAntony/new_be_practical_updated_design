@@ -91,7 +91,7 @@ useEffect(() => {
   return (
     <section id="adwantages" className='overflow-hidden'>
       <div className="adwantages-container container-fluid p-lg-5 text-center">
-        <h2 className="banner-heading text-white p-4" data-aos="fade-up">100% Job Guarantee Courses</h2>
+        <h3 className="banner-heading text-white p-4" data-aos="fade-up">Adwantages @ Be Practical</h3>
         <p className="text-white p-3 fs-5" data-aos="fade-up">
             Mentoring for our full stack course starts long before a teacher gives an individual training session and continues long after the training session is over. Assessment, motivation, design, delivery, and evaluation are all connected stages or activities in this job guaranteed courses in Bangalore.</p>
        <div className="row">

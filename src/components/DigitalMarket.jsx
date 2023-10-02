@@ -171,14 +171,14 @@ function DigitalMarket() {
 
       <StudentsPlaced/>
      
-      <h1 className="banner-heading" data-aos="fade-up">Adwantages @ Be Practical</h1>
+      <h3 className="banner-heading" data-aos="fade-up">Adwantages @ Be Practical</h3>
       <Adwantages/>
       <YoutubeVideos/>
       <section id="feedback">
-      <h1 className="banner-heading" data-aos="fade-up">What Students says About Course?</h1>
+      <h3 className="banner-heading" data-aos="fade-up">What Students says About Course?</h3>
       <Feedback/>
       </section>
-      <h1 className="banner-heading" data-aos="fade-up">You may also like these Courses</h1>
+      <h3 className="banner-heading" data-aos="fade-up">You may also like these Courses</h3>
       <AllCourses/>
     </section>
   )

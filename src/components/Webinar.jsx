@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react'
 import '../styles/webinar.css'
 import { Carousel } from 'react-bootstrap';
 import AOS from 'aos';
+import Next_toggle from './Next_toggle';
+import Prev_toggle from './Prev_toggle';
+import Indicators from './Indicators';
 
 const webinar = [
   {
@@ -117,27 +120,15 @@ function Webinar() {
       </div>
     );
   }
-    // Custom Next Button JSX
-    const CustomNextButton = ({ onClick }) => (
-      <i className="bi bi-caret-right-fill custom-next-button" onClick={onClick}>
-        
-      </i>
-    );
-  
-    // Custom Previous Button JSX
-    const CustomPrevButton = ({ onClick }) => (
-      <i className="bi bi-caret-left-fill custom-prev-button" onClick={onClick}>
-        
-      </i>
-    );
+
   return (
     <section className='bg-light p-2' id="webinar">
-        <h1 className="banner-heading" data-aos="fade-up">PRE-CAREER GUIDENCE PROGRAM FROM <span className="main-text" >FROM TOP MNC'S</span></h1>
+        <h3 className="banner-heading" data-aos="fade-up">PRE-CAREER GUIDENCE PROGRAM FROM <span className="main-text" >FROM TOP MNC'S</span></h3>
       <div className="students-placed">
       <Carousel 
       interval={carouselInterval}
-      nextIcon={<CustomNextButton />} // Use the custom Next Button
-      prevIcon={<CustomPrevButton />} 
+      nextIcon={<Next_toggle />} // Use the custom Next Button
+      prevIcon={<Prev_toggle />} 
       >
       {carouselItems.map((slideItems, index) => (
         <Carousel.Item key={index}
@@ -169,6 +160,8 @@ function Webinar() {
         </Carousel.Item>
       ))}
     </Carousel>
+    <div className="custom-indicators">
+        </div>
       </div>
       <div className="carousel-footer text-center d-flex justify-content-center">
         <button className="join-btn p-2" data-aos="fade-up">Enroll This Course</button>

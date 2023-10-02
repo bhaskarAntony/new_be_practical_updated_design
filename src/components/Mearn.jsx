@@ -11,10 +11,11 @@ import CourseTab from './CourseTab'
 import ChatBotContainer from './ChatBotContainer'
 import YoutubeVideos from '../components/YoutubeVideos'
 import AllCourses from './AllCourses'
-// import CourseModels from './CourseModels'
 import Model from './Model'
 import FAQ from './FAQ'
 import CourseOverview from './CourseOverview'
+// import FaqComponent from './FaqComponent'
+import FaqComponent from './FaqComponent'
 
 
 var languages =[
@@ -185,7 +186,7 @@ function Mearn() {
             </div>
         </div>
       </section>
-      <h1 className="banner-heading" data-aos="fade-up">What Programming Languages You will Learn?</h1>
+      <h3 className="banner-heading" data-aos="fade-up">What Programming Languages You will Learn?</h3>
       <section className='main-lan-container container-fluid bg-light py-2' id="languages">
             <div className="lan-inner-container">
                 <div className="row">
@@ -203,15 +204,16 @@ function Mearn() {
 <FAQ modules={Mern_module}/>
       <StudentsPlaced/>
      
-      <h1 className="banner-heading" data-aos="fade-up">Adwantages @ Be Practical</h1>
+      <h3 className="banner-heading" data-aos="fade-up">Adwantages @ Be Practical</h3>
       <Adwantages/>
       <YoutubeVideos/>
       <section id="feedback">
-      <h1 className="banner-heading" data-aos="fade-up">What Students says About Course?</h1>
+      <h3 className="banner-heading" data-aos="fade-up">What Students says About Course?</h3>
       <Feedback/>
       </section>
-      <h1 className="banner-heading" data-aos="fade-up">You may also like these Courses</h1>
+      <h3 className="banner-heading" data-aos="fade-up">You may also like these Courses</h3>
       <AllCourses/>
+
     </section>
   )
 }

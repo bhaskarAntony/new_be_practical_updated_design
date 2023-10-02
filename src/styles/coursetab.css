@@ -1,10 +1,3 @@
-:root{
-    --main-color:rgb(240 0 55/1);
-    --main-light-color:rgb(252 244 245/1);
-    --white-color:#fff;
-    --black-color:#000;
-      --dim-black:rgb(18 18 18/1);
-}
 
 .container-tab{
     padding: 20px;

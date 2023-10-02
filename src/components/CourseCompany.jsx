@@ -10,7 +10,7 @@ useEffect(() => {
   return (
     <section className='container-fluid course-companies p-3' id="companies">
         <div className="course-companies-inner container">
-        <h2 className="banner-heading text-white mb-4" data-aos="fade-up">Land your dream job at one of the leading tech companies</h2>
+        <h3 className="banner-heading text-white mb-4" data-aos="fade-up">Land your dream job at one of the leading tech companies</h3>
         <div className="course-company-image">
             <img src="https://be-practical.com/images/icon/company2.png" alt="" />
         </div>

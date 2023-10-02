@@ -1,8 +1,6 @@
-:root{
-    --main-color:rgb(240 0 55/1);
-    --main-light-color:rgb(252 244 245/1);
-    --white-color:#fff;
-    --black-color:#000;
+
+#webinar{
+  position: relative;
 }
 .webinar-card{
     padding: 10px;
@@ -46,6 +44,7 @@
     border-radius: 50%; /* Make the bullets circular */
     cursor: pointer;
     transition: background-color 0.3s ease; /* Add a smooth transition effect */
+    z-index: 20;
   }
   
   /* Style the active indicator bullet */
@@ -55,18 +54,19 @@
   }
   
 .custom-next-button, .custom-prev-button {
-    background-color: var(--main-color);
+    background-color: var(--black-color);
     color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    opacity: 0.6;
+    opacity: 0.9;
     font-size: 1.3em;
+    border-radius: 100px;
   }
   
   .custom-next-button:hover, .custom-prev-button:hover {
     opacity: 1;
-    background-color: var(--main-color); 
+    background-color: var(--black-color); 
   }
   

@@ -12,7 +12,7 @@ function Courses() {
     }, []);
   return (
     <section>
-        <h1 className="banner-heading" data-aos="fade-up">Your Choice, Our Course</h1>
+        <h3 className="banner-heading" data-aos="fade-up">Your Choice, Our Course</h3>
         <div className="container-fluid">
       <Tabs>
     <TabList className="custom-tabs">
@@ -21,7 +21,7 @@ function Courses() {
       <Tab className="custom-tab">Start Learning</Tab>
     </TabList>
 
-    <TabPanel>
+    <TabPanel className="courses-container">
     <TrendingCourses/>
     </TabPanel>
     <TabPanel>

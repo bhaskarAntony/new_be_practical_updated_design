@@ -1,9 +1,4 @@
-:root{
-    --main-color:rgb(240 0 55/1);
-    --main-light-color:rgb(252 244 245/1);
-    --white-color:#fff;
-    --black-color:#000;
-}
+
 .bot-container {
     background:linear-gradient(45deg, var(--main-light-color), var(--main-light-color));
     padding: 20px;

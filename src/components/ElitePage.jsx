@@ -1,14 +1,14 @@
 import React from 'react'
 import '../styles/elite-page.css'
 import Elite from './Elite'
-import eliteVideo from '../images/elite-bg.mp4'
+import elitevideo from '../images/elite-bg.mp4'
 import Adwantages from './Adwantages'
 
 function ElitePage() {
   return (
 <>
 <div className="elite-video">
-    <video src={eliteVideo} autoPlay muted></video>
+    <video src={elitevideo} autoPlay muted></video>
   </div>
    <div className="elite-main-page overflow-hidden">
      <div className='elite-page container-fluid p-0'>

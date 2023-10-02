@@ -18,14 +18,36 @@ import YoutubeVideos from '../components/YoutubeVideos'
 import Webinar from './Webinar';
 import CardSlider from '../styles/CardSlider';
 
+
+const home = [
+  {
+    heading: "High Paid Salaries & Continuous Career Growth",
+    subheading: "Build skills with courses, certificates, and degrees online from world-class universities and companies.",
+    image: "https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    heading: "High Paid Salaries & Continuous Career Growth",
+    subheading: "Build skills with courses, certificates, and degrees online from world-class universities and companies.",
+    image: "https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    heading: "High Paid Salaries & Continuous Career Growth",
+    subheading: "Build skills with courses, certificates, and degrees online from world-class universities and companies.",
+    image: "https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    heading: "High Paid Salaries & Continuous Career Growth",
+    subheading: "Build skills with courses, certificates, and degrees online from world-class universities and companies.",
+    image: "https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=600",
+  }
+];
+
 function Home() {
-
-
   useEffect(() => {
     AOS.init();
   }, []);
 
-  //model open logic 
+  // Model open logic
   const [showModal, setShowModal] = useState(false);
 
   const handleCloseModal = () => setShowModal(false);
@@ -38,112 +60,83 @@ function Home() {
     return () => clearInterval(interval);
   }, []);
 
-    const [index, setIndex] = useState(0);
-    const [paused, setPaused] = useState(false);
-    const [key, setKey] = useState('tab1'); // Initialize with the active tab key
-
-    const [activeTab, setActiveTab] = useState('tab1'); // Initialize with the active tab key
+  const [index, setIndex] = useState(0);
+  const [paused, setPaused] = useState(false);
+  const [key, setKey] = useState('tab1'); // Initialize with the active tab key
+  const [activeTab, setActiveTab] = useState('tab1'); // Initialize with the active tab key
 
   const handleTabClick = (tabId) => {
     setActiveTab(tabId);
   };
-  
-    const handleSelect = (selectedIndex) => {
-      setIndex(selectedIndex);
+
+  const handleSelect = (selectedIndex) => {
+    setIndex(selectedIndex);
+  };
+
+  const handleCarouselHover = () => {
+    setPaused(true);
+  };
+
+  const handleCarouselLeave = () => {
+    setPaused(false);
+  };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (!paused) {
+        setIndex((prevIndex) => (prevIndex + 1) % numberOfSlides);
+      }
+    }, 3000); // Adjust the autoplay interval (in milliseconds) as needed
+
+    return () => {
+      clearInterval(interval);
     };
-  
-    const handleCarouselHover = () => {
-      setPaused(true);
-    };
-  
-    const handleCarouselLeave = () => {
-      setPaused(false);
-    };
-  
-    useEffect(() => {
-      const interval = setInterval(() => {
-        if (!paused) {
-          setIndex((prevIndex) => (prevIndex + 1) % numberOfSlides);
-        }
-      }, 3000);
-       // Adjust the autoplay interval (in milliseconds) as needed
-  
-      return () => {
-        clearInterval(interval);
-      };
-    }, [paused]);
-  
-    const numberOfSlides = 3; // Replace with the actual number of slides
+  }, [paused]);
+
+  const numberOfSlides = 3; // Replace with the actual number of slides
+
   return (
     <div>
-       <DialogModel show={showModal} handleClose={handleCloseModal} />
-             <section className="home container-fluid">
+      <DialogModel show={showModal} handleClose={handleCloseModal} />
+      <section className="home container-fluid">
+        <div className="custom-carousel">
+          <Carousel activeIndex={index} onSelect={handleSelect}>
+          {
+  home.map((item, index) => (
+    <Carousel.Item key={index}>
+      <div className="carousal-text">
         <div className="row">
-            <div className="col-12 col-md-12 col-lg-6">
-            <div className="custom-carousel">
-        <Carousel activeIndex={index} onSelect={handleSelect}>
-          <Carousel.Item>
-           <div className="carousal-text">
-            <h1 className="carousal-heading" data-aos="fade-up">
-            High Paid Salaries & Continuous <span className='main-text'>Career Growth</span>
-            </h1>
-            <div className="carousel-body">
-                <p className='carousel-body-text' data-aos="fade-up">Build skills with courses, certificates, and degrees online from world-class universities and companies.</p>
-            </div>
-           <div className="carousel-footer">
-           <button className='r-join join-btn p-3' data-aos="fade-up">Join For Free</button>
-                <button className='r-book book-btn p-3' data-aos="fade-up">Book Your Free Master Classes</button>
-            </div>
-           </div>
-           
-          </Carousel.Item>
-          <Carousel.Item>
-          <div className="carousal-text">
-            <h1 className="carousal-heading" data-aos="fade-up">
-            Be practical's Job Oriented Training <span className='main-text'>Join Now</span>
-            </h1>
-            <div className="carousel-body">
-                <p className='carousel-body-text' data-aos="fade-up">Build skills with courses, certificates, and degrees online from world-class universities and companies.</p>
+          <div className="col-12 col-md-12 col-lg-6">
+            <div className="home-text">
+              <h1 className="main-heading">{item.heading}</h1>
+              <p className="subtitle">{item.subheading}</p>
             </div>
             <div className="carousel-footer">
-            <button className='r-join join-btn p-3' data-aos="fade-up">Join For Free</button>
-                <button className='r-book book-btn p-3' data-aos="fade-up">Book Your Free Master Classes</button>
+              <button className='btn p-3 bg-warning fw-bold' data-aos="fade-up">Join For Free</button>
+              <button className='btn p-3  bg-warning fw-bold' data-aos="fade-up">Book Your Free Master Classes</button>
             </div>
-           </div>
-          </Carousel.Item>
-          <Carousel.Item>
-          <div className="carousal-text">
-            <h1 className="carousal-heading" data-aos="fade-up">
-            After Course Completion Get Industry recognized <span className='main-text'>certificate</span>
-            </h1>
-            <div className="carousel-body">
-                <p className='carousel-body-text'>Build skills with courses, certificates, and degrees online from world-class universities and companies.</p>
+          </div>
+          <div className="col-12 col-md-12 col-lg-6">
+            <div className="home-image">
+              <img src={item.image} className="w-100 img-fluid" alt="" />
             </div>
-            <div className="carousel-footer">
-                <button className='r-join join-btn p-3' data-aos="fade-up">Join For Free</button>
-                <button className='r-book book-btn p-3' data-aos="fade-up">Book Your Free Master Classes</button>
-            </div>
-           </div>
-          </Carousel.Item>
-        </Carousel>
-        <div className="custom-indicators">
-          {Array.from({ length: 3 }).map((_, i) => (
-            <div
-              key={i}
-              className={`indicator ${index === i ? 'active' : ''}`}
-              onClick={() => handleSelect(i)}
-            ></div>
-          ))}
+          </div>
         </div>
       </div>
-            </div>
-            <div className="col-12 col-md-12 col-lg-6">
-                <div className="home-right">
-                <div className="main-image">
-                <img src={bg} alt="" />
-                </div>
-                </div>
-            </div>
+    </Carousel.Item>
+  ))
+}
+
+          </Carousel>
+          <div className="custom-indicators">
+            {Array.from({ length: home.length }).map((_, i) => (
+              <div
+                key={i}
+                className={`indicator ${index === i ? 'active' : ''}`}
+                onClick={() => handleSelect(i)}
+              ></div>
+            ))}
+          </div>
         </div>
         <div className="register-container-home bg-white">
         <div className="register align-items-center rounded-2 p-3">
@@ -186,7 +179,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-sm-12 col-md-2 col-lg-2 mt-5">
+            <div className="col-12 col-sm-12 col-md-2 col-lg-2 mt-4">
               <button className='register-btn text-center  p-3 w-100' data-aos="fade-up">Join Now</button>
             </div>
           </div>
@@ -195,16 +188,13 @@ function Home() {
         </div>
        </section>
       <Courses/>
-      <h1 className="banner-heading">Join Our Elite Program</h1>
+      <h3 className="banner-heading">Join Our Elite Program</h3>
       <Elite/>
       <Training/>
        <Companies/>
       <Activities/>
-      <h1 className="banner-heading" data-aos="fade-up">Why You Choose BE Practical?</h1>
+      <h3 className="banner-heading" data-aos="fade-up">Why You Choose BE Practical?</h3>
       <Skills/>
-
-      <h1 className="banner-heading" data-aos="fade-up">Adwantages @ Be Practical</h1>
-      {/* <CardSlider/> */}
       <Adwantages/>
       <section className="quote-container container-fluid">
             <div className="quote-inner container" data-aos="fade-up">
@@ -238,7 +228,7 @@ function Home() {
       </section>
       <Webinar/>
 
-      <h1 className="banner-heading" data-aos="fade-up">Meet Our Students</h1>
+      <h3 className="banner-heading" data-aos="fade-up">Meet Our Students</h3>
       <Feedback/>
       <StudentsPlaced/>
       {/* <ChatBotContainer/> */}

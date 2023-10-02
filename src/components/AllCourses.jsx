@@ -62,18 +62,15 @@ function AllCourses() {
                       <div className="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 d-flex justify-content-center">
                       <div className="card course-card" data-aos="zoom-in">
                       <div className={`course-card-header p-2 d-flex align-items-end bg-black justify-content-between course-card-header${item.id}`}>
-                      {/* <img src="https://media.istockphoto.com/id/1193323373/vector/a-colorful-trendy-card-design-vector-illustration.jpg?s=612x612&w=0&k=20&c=iIqY56kV1nKpfKCceag5NFWBnogRv8ZmJCFiicZxlpU=" alt="" /> */}
-                        {/* <div className="course-header-text text-white text-end">
-                            <h4>{item.name}</h4>
-                        </div> */}
-                        {/* <div className="curve">
+                      <img src="https://media.istockphoto.com/id/1193323373/vector/a-colorful-trendy-card-design-vector-illustration.jpg?s=612x612&w=0&k=20&c=iIqY56kV1nKpfKCceag5NFWBnogRv8ZmJCFiicZxlpU=" alt="" />
+                        <div className="curve">
 
-                        </div> */}
+                        </div>
                         <div className="blur">
                        
                         </div>
                            <div className="highlighter p-2">
-                            <p className="p-1 px-3 text-white bg-primary rounded-5"><i class="bi bi-fire"></i>{item.tag}</p>
+                            <p className="p-1 px-3 text-white bg-danger rounded-5"><i class="bi bi-fire"></i>{item.tag}</p>
                            <div className="course-icons">
                              <div className="share">
                              <i class="bi bi-share-fill"></i>
@@ -113,7 +110,7 @@ function AllCourses() {
                       <div className="course-footer p-2 m-0">
                       
                        <div className="carousel-footer">
-                        <button className="join-btn p-2 w-100 rounded-0">enroll Now</button>
+                        <button className="btn p-2 w-100 rounded-0 bg-warning">enroll Now</button>
                        </div>
                        
                       </div>

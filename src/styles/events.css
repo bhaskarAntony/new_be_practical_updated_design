@@ -1,17 +1,8 @@
-/* TabComponent.css */
-/* Show tabs on larger screens */
-:root{
-  --main-color:rgb(240 0 55/1);
-  --main-light-color:rgb(252 244 245/1);
-  --white-color:#fff;
-  --black-color:#000;
-  --dim-black:rgb(18 18 18/1);
-  --card-bg:rgb(54 54 54/1);
-}
+
 .custom-tabs {
   display: flex;
   justify-content: space-between;
-  background-color: #f6254848; /* Background color of the tab bar */
+  background-color: var(--main-light-color); /* Background color of the tab bar */
   border-radius: 10px; /* Rounded corners for the tab bar */
   outline: none;
   border: none;
@@ -25,12 +16,15 @@
   flex: 1;
   text-align: center;
  /* Text color of tabs */
-  color: #ff1f4b;
+  color: var(--main-color);
   padding: 20px 10px;
   cursor: pointer;
   border-radius: 100px; /* Rounded top corners for tabs */
   transition: background-color 0.3s;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Change the background color of the active tab */

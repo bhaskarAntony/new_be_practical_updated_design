@@ -3,6 +3,8 @@ import '../styles/youtubevideo.css'
 import { Carousel } from 'react-bootstrap';
 import AOS from 'aos';
 import logo from '../images/download.png'
+import Next_toggle from './Next_toggle';
+import Prev_toggle from './Prev_toggle';
 
   const youtubevideos = [
     {
@@ -171,10 +173,14 @@ function StudentsPlaced() {
   }
   return (
     <section className=' p-2 youtube-container' id="placed">
-        <h1 className="banner-heading" data-aos="fade-up">What our students says about institute</h1>
+        <h3 className="banner-heading" data-aos="fade-up">What our students says about institute</h3>
         <p className="banner-subtitle text-secondary px-5" data-aos="fade-up">We don’t just give certification but outcomes!</p>
       <div className="students-placed">
-      <Carousel interval={carouselInterval}>
+      <Carousel
+       interval={carouselInterval}
+       nextIcon={<Next_toggle />} // Use the custom Next Button
+       prevIcon={<Prev_toggle />} 
+       >
       {carouselItems.map((slideItems, index) => (
         <Carousel.Item key={index} 
           onMouseEnter={handleCarouselHover}

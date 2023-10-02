@@ -1,11 +1,6 @@
-:root{
-    --main-color:rgb(240 0 55/1);
-    --main-light-color:rgb(252 244 245/1);
-    --white-color:#fff;
-    --black-color:#000;
-}
+
 .course-card{
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
     position: relative;
     overflow: hidden;
     border: none !important;
@@ -47,28 +42,17 @@
     left: 0;
     bottom: 0;
 }
-/* .course-card-header::before{
+.course-card-header::before{
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(10px);
     left: 0;
     top: 0;
     z-index: 9;
-} */
-/* .course-card .course-card-header2{
-    background: linear-gradient(45deg, #E55604, #FFB000);
 }
-.course-card .course-card-header3{
-    background: linear-gradient(45deg, #176B87, #FFB000);
-}
-.course-card .course-card-header4{
-    background: linear-gradient(45deg, #793FDF, #FFB7B7);
-}
-.course-card .course-card-header5{
-    background: linear-gradient(45deg, #46458C, #F24C3D);
-} */
+
 .thumb-layout{
     position: absolute;
     left: 0;
@@ -141,7 +125,7 @@
     object-fit: cover;
 }
 .highlighter{
-    /* position: absolute; */
+    position: absolute;
     top: 0;
     left: 0;
     width:100%;
