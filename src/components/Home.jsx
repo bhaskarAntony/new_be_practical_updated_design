@@ -106,7 +106,7 @@ function Home() {
     <Carousel.Item key={index}>
       <div className="carousal-text">
             <div className="home-text py-3">
-              <h1 className="main-heading">{item.heading}</h1>
+              <h1 className="main-heading text-white">{item.heading}</h1>
               <p className="subtitle">{item.subheading}</p>
             </div>
             <div className="carousel-footer">

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Libre+Barcode+39+Extended+Text&family=Libre+Franklin&family=Noto+Sans:wght@300&family=Poppins:wght@400;500&family=Press+Start+2P&family=Rubik&family=Tilt+Prism&family=Wallpoet&family=Work+Sans:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Anton&family=Libre+Barcode+39+Extended+Text&family=Libre+Franklin&family=Noto+Sans:wght@300&family=Poppins:wght@400;500&family=Press+Start+2P&family=Rubik&family=Tilt+Prism&family=Wallpoet&family=Work+Sans:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Libre+Barcode+39+Extended+Text&family=Libre+Franklin&family=Noto+Sans:wght@300&family=Poppins:wght@400;500;800&family=Press+Start+2P&family=Rubik&family=Tilt+Prism&family=Wallpoet&family=Work+Sans:wght@300&display=swap');
 
 *{
   font-family: 'Poppins', sans-serif;
@@ -97,7 +98,7 @@
   color: #fff;
 }
 .home{
-  background: linear-gradient(45deg, #05595B, #055a5b42), url('../images/image-home-bg.svg') no-repeat center top;
+  background: linear-gradient(45deg, #055a5b69, #055a5b42), url('../images/image-home-bg.svg') no-repeat center top;
   background-size: cover;
   /* background-color: #05595B; */
   padding-bottom: 20px;
@@ -121,6 +122,9 @@
 }
 .main-heading{
   font-size: 3.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
 }
 .home .subtitle{
   color: #fff;
@@ -131,6 +135,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 
 }
 .home-text{

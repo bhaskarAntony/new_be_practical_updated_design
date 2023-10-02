@@ -3,13 +3,20 @@ import '../styles/Course-single.css'
 import StudentsPlaced from './StudentsPlaced'
 import Languages from './Languages'
 import CourseCard from './CourseCard'
-import Adwantages from './Adwantages'
 import Feedback from './Feedback'
+import Adwantages from './Adwantages'
 import CourseCompany from './CourseCompany'
 import AOS from 'aos';
 import CourseTab from './CourseTab'
 import ChatBotContainer from './ChatBotContainer'
+import YoutubeVideos from '../components/YoutubeVideos'
+import AllCourses from './AllCourses'
+import Model from './Model'
+import FAQ from './FAQ'
 import CourseOverview from './CourseOverview'
+// import FaqComponent from './FaqComponent'
+import FaqComponent from './FaqComponent'
+
 
 var languages =[
     {
@@ -45,6 +52,34 @@ var languages =[
         image:"https://cdn-icons-png.flaticon.com/128/2906/2906274.png"
     }
 ]
+const Mern_module = [
+    {
+      module: 'Web Wonders',
+      about: 'Answer to Question 1 goes here.',
+      description:"You will start with HTML, CSS, and JavaScript and then move on to learning data structures such as arrays, linked lists, and trees. You will also learn how to implement these data structures in JavaScript."
+    },
+    {
+      module: 'Javascript Jungle',
+      about: 'Answer to Question 1 goes here.',
+      description:"You will deepen your understanding of JavaScript and explore advanced concepts like object-oriented programming, closures, and asynchronous programming."
+    },
+    {
+      module: 'Web Wonders',
+      about: 'Answer to Question 1 goes here.',
+      description:""
+    },
+    {
+      module: 'Web Wonders',
+      about: 'Answer to Question 1 goes here.',
+      description:""
+    },
+    {
+      module: 'Web Wonders',
+      about: 'Answer to Question 1 goes here.',
+      description:""
+    }
+    // Add more FAQ items as needed
+  ];
 var card = [
     {
         image:"https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -67,29 +102,33 @@ function Java() {
       }, []);
   return (
     <section>
-      <div className="course-home container-fluid">
+      <section className="course-home container-fluid java" id="home">
         <div className="row">
-            <div className="col-12 col-md-12 col-lg-6">
-                <div className="course-single-text">
-                    <div className="course-nav py-3">
+            <div className="col-12 col-md-12 col-lg-12">
+                <div className="course-single-text d-flex justify-content-center">
+                    {/* <div className="course-nav py-3">
                         <ul className='m-0 p-1'>
                             <li><a href="/">Home</a></li>
                             <i class="bi bi-arrow-right-short"></i>
-                            <li><a href="/java-fullstack">Java FullStack</a></li>
+                            <li><a href="/mern-fullstack">MERN FullStack</a></li>
                         </ul>
-                    </div>
-                    <div className="course-tag">
+                    </div> */}
+                    {/* <div className="course-tag">
                         <div className="tag">
                             <p className='text-white fs-5' data-aos="fade-up">Trending Course</p>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="header-text">
-                        <h1 className="course-header" data-aos="fade-up">Certification in  <br /><span className='main-text'>Java </span>Full Stack</h1>
-                        <div className="batch"> 
+                        <h1 className="course-header" data-aos="fade-up"><span className='text-warning'>HELLO,</span> Devoloper</h1>
+                        <h1 className='course-header-2'>START YOUR JOURNY WITH</h1>
+                        <h1 className="course-header text-warning" data-aos="fade-up">MERN</h1>
+                        <button className="btn p-3 rounded-5 bg-warning text-black fw-bold m-2">DOWNLOAD BROWCHER</button>
+                        <button className="btn p-3 rounded-5 bg-warning text-black fw-bold m-2">ENROLL NOW</button>
+                        {/* <div className="batch"> 
                         <i class="bi bi-calendar3 fs-3"></i>
                             <p data-aos="fade-up">New Batch Starts At 20 Sept 2023</p>
-                        </div>
-                        <div className="course-points">
+                        </div> */}
+                        {/* <div className="course-points">
                             <ul className='p-0 m-0 text-seconday'>
                                 <li>
                                 <i class="bi bi-check-circle-fill text-success"></i>
@@ -108,15 +147,15 @@ function Java() {
                                     <p data-aos="fade-up">Fewer Resources & more openings.</p>
                                 </li>
                             </ul>
-                        </div>
-                        <div className="course-btns carousel-footer">
+                        </div> */}
+                        {/* <div className="course-btns carousel-footer">
                             <button className="c-d-btn" data-aos="fade-up">DownLoad Browcher</button>
                             <button className="enrol-btn" data-aos="fade-up"> Enroll Now</button>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
-            <div className="col-12 col-md-12 col-lg-6">
+            {/* <div className="col-12 col-md-12 col-lg-6">
                 <div className="course-single-image">
                     <div className="video-container">
                         <img src="https://images.pexels.com/photos/3183165/pexels-photo-3183165.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
@@ -148,12 +187,11 @@ function Java() {
                             </div>
                         </div>
                 </div>
-            </div>
+            </div> */}
         </div>
-      </div>
-      <CourseOverview overview={overview}/>
+      </section>
       <h3 className="banner-heading" data-aos="fade-up">What Programming Languages You will Learn?</h3>
-      <section className='main-lan-container container-fluid bg-light py-2'>
+      <section className='main-lan-container container-fluid bg-light py-2' id="languages">
             <div className="lan-inner-container">
                 <div className="row">
                     <div className="col-12 col-md-6 col-lg-8">
@@ -165,13 +203,21 @@ function Java() {
                 </div>
             </div>
       </section>
-
-      <CourseCompany/>
+      <CourseOverview overview={overview}/>
+ <CourseCompany/>
+<FAQ modules={Mern_module}/>
       <StudentsPlaced/>
+     
       <h3 className="banner-heading" data-aos="fade-up">Adwantages @ Be Practical</h3>
       <Adwantages/>
+      <YoutubeVideos/>
+      <section id="feedback">
       <h3 className="banner-heading" data-aos="fade-up">What Students says About Course?</h3>
       <Feedback/>
+      </section>
+      <h3 className="banner-heading" data-aos="fade-up">You may also like these Courses</h3>
+      <AllCourses/>
+
     </section>
   )
 }

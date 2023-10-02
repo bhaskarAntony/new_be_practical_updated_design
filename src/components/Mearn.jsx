@@ -102,29 +102,33 @@ function Mearn() {
       }, []);
   return (
     <section>
-      <section className="course-home container-fluid" id="home">
+      <section className="course-home container-fluid mern" id="home">
         <div className="row">
-            <div className="col-12 col-md-12 col-lg-6">
-                <div className="course-single-text">
-                    <div className="course-nav py-3">
+            <div className="col-12 col-md-12 col-lg-12">
+                <div className="course-single-text d-flex justify-content-center">
+                    {/* <div className="course-nav py-3">
                         <ul className='m-0 p-1'>
                             <li><a href="/">Home</a></li>
                             <i class="bi bi-arrow-right-short"></i>
                             <li><a href="/mern-fullstack">MERN FullStack</a></li>
                         </ul>
-                    </div>
-                    <div className="course-tag">
+                    </div> */}
+                    {/* <div className="course-tag">
                         <div className="tag">
                             <p className='text-white fs-5' data-aos="fade-up">Trending Course</p>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="header-text">
-                        <h1 className="course-header" data-aos="fade-up">Certification in  <br /><span className='main-text'>MERN </span>Full Stack</h1>
-                        <div className="batch"> 
+                        <h1 className="course-header" data-aos="fade-up"><span className='text-warning'>HELLO,</span> Devoloper</h1>
+                        <h1 className='course-header-2'>START YOUR JOURNY WITH</h1>
+                        <h1 className="course-header text-warning" data-aos="fade-up">MERN</h1>
+                        <button className="btn p-3 rounded-5 bg-warning text-black fw-bold m-2">DOWNLOAD BROWCHER</button>
+                        <button className="btn p-3 rounded-5 bg-warning text-black fw-bold m-2">ENROLL NOW</button>
+                        {/* <div className="batch"> 
                         <i class="bi bi-calendar3 fs-3"></i>
                             <p data-aos="fade-up">New Batch Starts At 20 Sept 2023</p>
-                        </div>
-                        <div className="course-points">
+                        </div> */}
+                        {/* <div className="course-points">
                             <ul className='p-0 m-0 text-seconday'>
                                 <li>
                                 <i class="bi bi-check-circle-fill text-success"></i>
@@ -143,15 +147,15 @@ function Mearn() {
                                     <p data-aos="fade-up">Fewer Resources & more openings.</p>
                                 </li>
                             </ul>
-                        </div>
-                        <div className="course-btns carousel-footer">
+                        </div> */}
+                        {/* <div className="course-btns carousel-footer">
                             <button className="c-d-btn" data-aos="fade-up">DownLoad Browcher</button>
                             <button className="enrol-btn" data-aos="fade-up"> Enroll Now</button>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
-            <div className="col-12 col-md-12 col-lg-6">
+            {/* <div className="col-12 col-md-12 col-lg-6">
                 <div className="course-single-image">
                     <div className="video-container">
                         <img src="https://images.pexels.com/photos/3183165/pexels-photo-3183165.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
@@ -183,7 +187,7 @@ function Mearn() {
                             </div>
                         </div>
                 </div>
-            </div>
+            </div> */}
         </div>
       </section>
       <h3 className="banner-heading" data-aos="fade-up">What Programming Languages You will Learn?</h3>

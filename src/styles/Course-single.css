@@ -3,6 +3,7 @@
     min-height: 100vh;
     background-color: var(--main-color);
     color: var(--white-color);
+    text-align: center;
 }
 .course-nav ul{
     display: flex;
@@ -36,7 +37,12 @@
     transform: skewX(25deg);
 }
 .course-header{
-    font-size: 3.5rem;
+    font-size: 6rem;
+    font-weight: 900;
+}
+.course-header-2{
+    font-size: 3rem;
+    font-weight: 300;
 }
 .header-text{
     min-height: 50vh;
@@ -127,12 +133,30 @@
     .course-header{
         font-size: 2.5rem;
     }
+    .course-header{
+        font-size: 3.5em !important;
+    }
+    .course-header-2{
+        font-size: 2.5em !important;
+    }
 }
-@media (max-width:528px){
+/* @media (max-width:528px){
     .enrolled h1{
         font-size: 1.5rem;
     }
     .enrolled p{
         font-size: 1rem;
     }
+} */
+.mern{
+    background: url('../images/mern-bg.svg') no-repeat center;
+    background-size: cover;
+}
+.python{
+    background: url('../images/python-bg.svg') no-repeat center;
+    background-size: cover;
+}
+.java{
+    background: url('../images/jsva-bg.svg') no-repeat center;
+    background-size: cover;
 }
