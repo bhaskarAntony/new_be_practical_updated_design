@@ -50,7 +50,7 @@
     background-color: #eede2788;
 }
 
-@media (max-width:528px){
+@media (max-width:800px){
     .text-right h1{
         font-size: 3em;
         
@@ -65,7 +65,7 @@
         flex-flow: nowrap !important;
     }
     .status{
-        overflow-x: scroll;
+        overflow-x: auto;
         width: 100%;
     }
     .video-status .video video{
@@ -78,7 +78,6 @@
     .skillsmain{
         padding: 20px;
         min-height: 70vh !important;
-        height: 70vh;
     }
    
     .text-right h1{
@@ -102,7 +101,6 @@
 .video{
     position: relative;
     text-align: center;
-
 }
 .play-video{
     width: 80px;
@@ -129,10 +127,7 @@
         font-size: 1rem;
     }
 }
-*{
-    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-}
-@media (max-width:768px){
+/* @media (max-width:768px){
     .skillsmain{
         padding: 0;
         min-height: fit-content;
@@ -147,7 +142,7 @@
         padding: 10px;
         height: fit-content;
     }
-}
+} */
 .play-video:hover{
     transform: scale(1.1);
     transition: 1s all;

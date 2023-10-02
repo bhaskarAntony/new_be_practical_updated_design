@@ -18,7 +18,6 @@ function Courses() {
     <TabList className="custom-tabs">
       <Tab className="custom-tab">Trending Courses</Tab>
       <Tab className="custom-tab">Our Courses</Tab>
-      <Tab className="custom-tab">Start Learning</Tab>
     </TabList>
 
     <TabPanel className="courses-container py-3">
@@ -26,9 +25,6 @@ function Courses() {
     </TabPanel>
     <TabPanel className="py-3">
       <AllCourses/>
-    </TabPanel>
-    <TabPanel>
-      d
     </TabPanel>
   </Tabs>
     </div>
