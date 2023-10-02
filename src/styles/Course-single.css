@@ -10,13 +10,13 @@
 }
 .course-nav ul li a{
     text-decoration: none;
-    color: var(--main-color);
+    color: #efc21d;
 }
 .course-tag{
     padding: 20px 10px;
 }
 .tag{
-    background-color: var(--black-color);
+    background-color: #efc21d;
     padding: 10px;
     position: relative;
     width: fit-content;
@@ -32,7 +32,7 @@
     height: 100%;
     right: -15px;
     top: 0;
-    background-color: var(--black-color);
+    background-color:#efc21d;
     transform: skewX(25deg);
 }
 .course-header{
@@ -49,8 +49,14 @@
     margin-top: 10px;
     padding: 10px;
     border-radius: 5px;
-    background-color: var(--main-light-color);
-    color: var(--white-color);
+    background-color: #efc11d27;
+    color: #efc21d;
+}
+.course-points [class*="bi-"]{
+    color: #efc21d !important;
+}
+.c-d-btn{
+    background-color: #efc21d;
 }
 .course-points{
     padding: 20px 0px;
@@ -99,7 +105,7 @@
     left: 40%;
 }
 .enrolled p{
-    color: var(--white-color);
+    color: #efc21d;
 }
 .course-companies {
     background-color: var(--dim-black);

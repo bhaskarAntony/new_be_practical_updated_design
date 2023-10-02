@@ -10,11 +10,11 @@
 }
 .language-card{
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 0px;
     text-align: center;
     /* border: 2px solid #000; */
     margin-bottom: 20px;
-    background-color: var(--main-light-color) !important;
+    background-color: var(--white-color) !important;
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 .language-card img{

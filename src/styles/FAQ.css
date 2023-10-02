@@ -19,7 +19,7 @@
     position: absolute;
     width: 5px;
     height: 100%;
-    background-color: #02c372;
+    background-color: #05595B;
     left: -10px;
     top: 10px;
     border-radius: 100px;
@@ -29,13 +29,16 @@
     position: absolute;
     width: 20px;
     height: 5px;
-    background-color: #02c372;
+    background-color: #05595B;
     left: -20px;
     top: 50%;
     border-radius: 100px;
   }
   .faq-item:hover{
-    background-color: #02c372;
+    background-color: #05595B;
+  }
+  .faq-item:hover .faq-question-text span{
+    color: var(--white-color);
   }
   .faq-item:hover .faq-answer{
     background-color: #fff;
@@ -48,11 +51,17 @@
     cursor: pointer;
     border-radius: 20px;
   }
+  .faq-question-text span{
+    color: #05595B;
+  }
   .faq-answer h5{
-    color: #02c372;
+    color: #062C30;
   }
   .faq-answer p{
     color: #424141;
+  }
+  .count{
+    background-color: #062C30;
   }
   
   .faq-question-text {
@@ -74,7 +83,7 @@
   }
   
   .faq-item.active .faq-question {
-    background-color: #02c372;
+    background-color: #062C30;
     color: #ffffff;
   }
   .module-right img{
@@ -89,7 +98,7 @@
 .battery{
     width: 90%;
     height: 120px;
-    background-color: #7cff98;
+    background-color: #05595B;
     position: relative;
     background: #2e2e2e;
     border: 8px solid #fff;

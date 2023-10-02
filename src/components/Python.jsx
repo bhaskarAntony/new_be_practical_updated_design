@@ -110,7 +110,7 @@ function Python() {
                             </ul>
                         </div>
                         <div className="course-btns carousel-footer">
-                            <button className="join-btn">DownLoad Browcher</button>
+                            <button className="c-d-btn">DownLoad Browcher</button>
                             <button className="enrol-btn"> Enroll Now</button>
                         </div>
                     </div>

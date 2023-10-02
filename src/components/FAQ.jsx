@@ -23,10 +23,10 @@ const FAQ = (props) => {
           key={index}
         >
           <div className="faq-question d-flex align-items-center" onClick={() => toggleAccordion(index)}>
-            <span className="count p-2 px-3 rounded-5 bg-success text-white">
+            <span className="count p-2 px-3 rounded-5  text-white">
         {index+1}
             </span>
-            <span className="faq-question-text"><span className="fw-bold text-success mx-2"> Module{index + 1}:</span> {item.module}</span>
+            <span className="faq-question-text"><span className="fw-bold  mx-2"> Module{index + 1}:</span> {item.module}</span>
             <span className="faq-icon">
               {activeIndex === index ? <i class="bi bi-caret-up-fill"></i>:<i class="bi bi-caret-down-fill"></i>}
             </span>

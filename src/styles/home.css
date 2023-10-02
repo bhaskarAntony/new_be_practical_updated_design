@@ -82,13 +82,14 @@
         font-weight: 600 !important;
   }
   .enrol-btn{
-    border: 2px solid var(--main-color) !important;
-    color: var(--main-color);
+    border: 2px solid #efc21d !important;
+    color: #efc21d;
     background-color: transparent !important;
+    font-weight: normal !important;
   }
   .enrol-btn:hover{
-    background-color: var(--main-color) !important;
-    color: var(--white-color);
+    background-color: #efc21d !important;
+    color: var(--black-color);
   }
 .main-heading{
   color: #fff;

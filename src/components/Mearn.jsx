@@ -145,7 +145,7 @@ function Mearn() {
                             </ul>
                         </div>
                         <div className="course-btns carousel-footer">
-                            <button className="join-btn" data-aos="fade-up">DownLoad Browcher</button>
+                            <button className="c-d-btn" data-aos="fade-up">DownLoad Browcher</button>
                             <button className="enrol-btn" data-aos="fade-up"> Enroll Now</button>
                         </div>
                     </div>
