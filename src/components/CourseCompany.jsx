@@ -18,8 +18,8 @@ useEffect(() => {
             Get 50% refund fees if you not placed
         </p>
         <div className="carousel-footer d-flex justify-content-center">
-            <button className="join-btn p-2" data-aos="fade-up">Enroll Now</button>
-            <button className="join-btn p-2" data-aos="fade-up">DownLoad Browcher</button>
+            <button className="bg-warning btn fs-5 p-2" data-aos="fade-up">Enroll Now</button>
+            <button className="bg-warning btn fs-5  p-2" data-aos="fade-up">DownLoad Browcher</button>
         </div>
 
         </div>

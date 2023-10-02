@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import '../styles/students-placed.css'
 import { Carousel } from 'react-bootstrap';
 import AOS from 'aos';
+import Next_toggle from './Next_toggle';
+import Prev_toggle from './Prev_toggle';
 
 const students = [
    {
@@ -146,7 +148,11 @@ function StudentsPlaced() {
         <h3 className="banner-heading" data-aos="fade-up">Transforming careers with Our 100% Job Guarntee Program</h3>
         <p className="banner-subtitle text-secondary px-5" data-aos="fade-up">We don’t just give certification but outcomes!</p>
       <div className="students-placed">
-      <Carousel interval={carouselInterval}>
+      <Carousel 
+      interval={carouselInterval}
+      nextIcon={<Next_toggle />} // Use the custom Next Button
+       prevIcon={<Prev_toggle />} 
+      >
       {carouselItems.map((slideItems, index) => (
         <Carousel.Item key={index} 
           onMouseEnter={handleCarouselHover}

@@ -95,8 +95,15 @@
   color: #fff;
 }
 .home{
+
   background-color: #05595B;
   padding-bottom: 20px;
+}
+.home-bottom-wave{
+  min-height: 200px;
+  background: url('../images/wave-home-bottom.svg') no-repeat center top;
+  background-size: cover;
+  margin-top: -80px;
 }
 .main-heading{
   font-size: 3.5rem;
@@ -104,13 +111,19 @@
 .home .subtitle{
   color: #fff;
 }
+.home-image{
+  /* background: url('../images/course-bg.svg') no-repeat center;
+  background-size: cover; */
+  min-height: 90vh;
+}
 .register{
   box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
   position: relative;
   overflow: hidden;
-  z-index: 10;
+  z-index: 15;
   /* margin-bottom: -100% !important; */
   border-radius: 10px;
+  background-color: #fff;
 
 }
 .register::before{

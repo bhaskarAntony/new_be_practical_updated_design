@@ -3,6 +3,8 @@ import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/feedback.css'
 import AOS from 'aos';
+import Prev_toggle from './Prev_toggle';
+import Next_toggle from './Next_toggle';
 
 const items = [
   {
@@ -146,7 +148,11 @@ function Feedback() {
   }
 
   return (
-    <Carousel interval={carouselInterval}>
+    <Carousel
+     interval={carouselInterval}
+     nextIcon={<Next_toggle />} // Use the custom Next Button
+       prevIcon={<Prev_toggle />} 
+     >
       {carouselItems.map((slideItems, index) => (
         <Carousel.Item key={index} 
           onMouseEnter={handleCarouselHover}

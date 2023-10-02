@@ -1,5 +1,7 @@
 
 .course-card{
+    background: url('../images/wave-haikei-course.svg') no-repeat bottom left;
+    background-size: cover;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
     position: relative;
     border: none !important;

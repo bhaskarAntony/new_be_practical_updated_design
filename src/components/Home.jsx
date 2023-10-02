@@ -23,22 +23,22 @@ const home = [
   {
     heading: "High Paid Salaries & Continuous Career Growth",
     subheading: "Build skills with courses, certificates, and degrees online from world-class universities and companies.",
-    image: "https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: "https://www.pngmart.com/files/7/Web-Design-Transparent-Images-PNG.png",
   },
   {
     heading: "High Paid Salaries & Continuous Career Growth",
     subheading: "Build skills with courses, certificates, and degrees online from world-class universities and companies.",
-    image: "https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: "https://www.pngmart.com/files/7/Web-Design-PNG-Transparent.png",
   },
   {
     heading: "High Paid Salaries & Continuous Career Growth",
     subheading: "Build skills with courses, certificates, and degrees online from world-class universities and companies.",
-    image: "https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: "https://www.pngmart.com/files/7/Web-Design-PNG-Transparent.png",
   },
   {
     heading: "High Paid Salaries & Continuous Career Growth",
     subheading: "Build skills with courses, certificates, and degrees online from world-class universities and companies.",
-    image: "https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=600",
+    image: "https://www.transparentpng.com/thumb/web-design/web-design-cut-out-png-12.png",
   }
 ];
 
@@ -112,8 +112,8 @@ function Home() {
               <p className="subtitle">{item.subheading}</p>
             </div>
             <div className="carousel-footer">
-              <button className='btn p-3 bg-warning fw-bold w-md-100 home-btn' data-aos="fade-up">Join For Free</button>
-              <button className='btn p-3  bg-warning fw-bold w-md-100 home-btn' data-aos="fade-up">Book Your Free Master Classes</button>
+              <button className='btn p-3 bg-warning fw-bold w-md-100 home-btn'>Join For Free</button>
+              <button className='btn p-3  bg-warning fw-bold w-md-100 home-btn'>Book Your Free Master Classes</button>
             </div>
           </div>
           <div className="col-12 col-md-12 col-lg-6">
@@ -187,6 +187,9 @@ function Home() {
         </div>
         </div>
        </section>
+       <div className="home-bottom-wave">
+        
+       </div>
       <Courses/>
       <h3 className="banner-heading">Join Our Elite Program</h3>
       <Elite/>

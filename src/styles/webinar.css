@@ -54,19 +54,17 @@
   }
   
 .custom-next-button, .custom-prev-button {
-    background-color: var(--black-color);
-    color: #fff;
+    background-color: var(--main-color);
+    color: #fedd01;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    opacity: 0.9;
     font-size: 1.3em;
     border-radius: 100px;
   }
   
   .custom-next-button:hover, .custom-prev-button:hover {
-    opacity: 1;
     background-color: var(--black-color); 
   }
   @media (max-width:600px){
