@@ -144,7 +144,7 @@ function Webinar() {
                 <div className="webinar-card-header text-white bg-black">
                         <img src={item.image} alt="" />
                 </div>
-                <div className="placed-card-body p-2">
+                <div className="webinar-card-body p-2">
                     <div className="webinar-heading">
                   <h4><span className="webinar-heading-left">ONLINE</span><span className="webinar-heading-right">WEBINAR</span></h4>
                     </div>

@@ -1,4 +1,4 @@
-@media (max-width:528px){
+@media (max-width:600px){
     .custom-carousel{
         align-items: flex-start;
         min-height: fit-content;
@@ -42,6 +42,13 @@
       }
       p{
         font-size: 0.9em;
+      }
+      .quote-right h3{
+        font-size: 1.4em;
+      }
+      .quote-container{
+        padding: 10px;
+        margin-top: 20px;
       }
 
 }

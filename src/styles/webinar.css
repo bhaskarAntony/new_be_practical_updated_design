@@ -69,4 +69,8 @@
     opacity: 1;
     background-color: var(--black-color); 
   }
-  
+  @media (max-width:600px){
+    .webinar-card-body h4, .webinar-card-body h3{
+      font-size: 1.1em;
+    }
+}

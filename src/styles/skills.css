@@ -72,7 +72,7 @@
         height: 80px;
         width: 80px;
         border-radius: 100%;
-        border: 3px solid #892cdb;
+        border: 3px solid var(--main-color);
         padding: 3px;
     }
     .skillsmain{
@@ -135,6 +135,7 @@
 @media (max-width:768px){
     .skillsmain{
         padding: 0;
+        min-height: fit-content;
     }
     .video{
         min-height: 100%;
@@ -144,6 +145,7 @@
     }
     .skillsmain .right{
         padding: 10px;
+        height: fit-content;
     }
 }
 .play-video:hover{

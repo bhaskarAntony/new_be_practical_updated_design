@@ -83,7 +83,7 @@ function Companies() {
       <div className="companies-brands-container container-fluid p-2">
         <div className="row">
           {companies.map((item, index) => (
-            <div className="col-6 col-md-3 col-lg-2 p-2" key={index}>
+            <div className="col-3 col-md-3 col-lg-2 p-2" key={index}>
               <div className="all-company-card" data-aos="flip-up">
                 <img src={item.image} alt="" />
               </div>
