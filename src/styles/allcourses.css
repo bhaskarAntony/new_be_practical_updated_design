@@ -3,12 +3,12 @@
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
     position: relative;
     border: none !important;
-    background-color: var(--main-color) !important;
+    background-color: #05595B !important;
     max-width:100%;
     color: var(--white-color) !important;
 }
 .course-card .course-card-header{
-    background: var(--main-color);
+    background: transparent;
     position: relative;
     overflow: hidden;
     min-height: 150px;

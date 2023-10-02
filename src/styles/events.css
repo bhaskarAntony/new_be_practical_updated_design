@@ -30,7 +30,7 @@
 
 /* Change the background color of the active tab */
 .custom-tab[aria-selected="true"] {
-  background-color: var(--main-color); /* Background color of the active tab */
+  background-color: #062C30; /* Background color of the active tab */
   color: var(--white-color); /* Text color of the active tab */
   outline: none;
 }
