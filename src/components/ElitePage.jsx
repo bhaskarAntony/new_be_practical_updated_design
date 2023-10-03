@@ -4,12 +4,22 @@ import Elite from './Elite'
 import elitevideo from '../images/elite-bg.mp4'
 import Adwantages from './Adwantages'
 
+const eliteCourses =[
+    {
+        title:"MERN FullStack",
+        description:""
+    },
+     {
+        title:"MERN FullStack",
+        description:""
+    }
+]
 function ElitePage() {
   return (
 <>
-<div className="elite-video">
+{/* <div className="elite-video">
     <video src={elitevideo} autoPlay muted></video>
-  </div>
+  </div> */}
    <div className="elite-main-page overflow-hidden">
      <div className='elite-page container-fluid p-0'>
      <div className="row">
@@ -78,6 +88,15 @@ function ElitePage() {
         </div>
     </div>
     <div className="container elite-devider"></div>
+    <div className="elite-course container-fluid">
+        <div className="roW">
+            {
+                eliteCourses.map((item, index)=>{
+
+                })
+            }
+        </div>
+    </div>
     <Adwantages/>
    </div>
 </>
