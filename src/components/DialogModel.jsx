@@ -1,56 +1,68 @@
-import React, { useState } from 'react';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
-import '../styles/dialogmodel.css'
-import Form from 'react-bootstrap/Form';
+import React from 'react';
+import { Modal, Button, Form, Col, Row, Image } from 'react-bootstrap';
 
 function DialogModel({ show, handleClose }) {
-    // const [inputValue, setInputValue] = useState('');
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Perform registration logic here
+    // You can access form data using state variables or refs
+    // Example: const formData = { name, email, password };
+    // Send formData to your API or perform registration logic
+    // Close the modal after successful registration
+    handleClose();
+  };
 
-    // const handleInputChange = (e) => {
-    //   setInputValue(e.target.value);
-    // };
   return (
-    <Modal show={show} onHide={handleClose} className='dialog_register'>
-      <Modal.Header closeButton className='modal-header align-items-center d-flex'>
-        <Modal.Title>
-            <div className="online-indicator"></div>
-        </Modal.Title>
-        <p className='px-2 fw-bold pt-4'>Our Counceler is in <span classname="text-success">Online</span></p>
+    <Modal show={show} onHide={handleClose} size="lg"
+    aria-labelledby="contained-modal-title-vcenter"
+    centered>
+      <Modal.Header closeButton>
+        <Modal.Title>Register</Modal.Title>
       </Modal.Header>
-      <Modal.Body className='modal-body'>
-  
-      <div className="register-card">
-       <div className="text-center">
-       {/* <img src="https://abhirajchatterjee.netlify.app/images/hello-transparent-2.gif" alt="" /> */}
-       </div>
-        <Form.Label>Can i Know your name?</Form.Label>
-        <Form.Group controlId="floatingInput" claaName="mt-2">
-      <Form.Control
-        type="text"
-        placeholder="Enter Name"
-      />
-    </Form.Group>
-    <Form.Label>Mobile Number</Form.Label>
-      <Form.Group controlId="floatingInput" className="mt-2">
-      <Form.Control
-        type="text"
-        placeholder="Enter Your number"
-      />
-    </Form.Group>
-    <button className="register-btn w-100 mt-3 p-2 position-relative fs-5">Send Request To Chat
-    <span class="position-absolute top-0 start-100 translate-middle p-2 bg-success border border-light rounded-circle fs-5">
-       
-       <span class="visually-hidden">New alerts</span>
-     </span>
-    </button>
+     <div className="container-fluid dialog-modal w-100">
+      <div className="row">
+      <div className="col-12 col-md-6 col-lg-6">
+          <div className="modal-form">
+            <form>
+            <div className="form-group mt-2">
+              <label htmlFor="name" className="form-label">Name</label>
+              <input type="text" className="form-control" placeholder='Enter Your Name' />
+            </div>
+            <div className="form-group mt-2">
+              <label htmlFor="email" className="form-label">Email Address</label>
+              <input type="email" className="form-control" placeholder='Enter Your Email' />
+            </div>
+            <div className="form-group mt-2">
+              <label htmlFor="name" className="form-label">Mobile Number</label>
+              <input type="text" className="form-control" placeholder='Ex:- +91-000-0000-000' />
+            </div>
+            <div className="form-group mt-2">
+              <button className="btn bg-warning p-3 fs-5 w-100">Register Now</button>
+            </div>
+            <hr />
+            <p className="w-100 text-center text-white">Or</p>
+            <div className="register-icons form-group mt-2">
+             <div className="register-icon">
+             <i class="bi bi-google"></i>
+             </div>
+             <div className="register-icon">
+             <i class="bi bi-facebook"></i>
+             </div>
+             <div className="register-icon">
+             <i class="bi bi-linkedin"></i>
+             </div>
+            </div>
+            </form>
+          </div>
+        </div>
+        <div className="col-12 col-md-6 col-lg-6">
+          <div className="modal-image">
+            <img src="https://tykit.rometheme.pro/teracloud/wp-content/uploads/sites/134/2023/09/great-suggestion-came-to-girl-mind-studio-portrai.png" alt="" className='w-100 img-fluid' />
+          </div>
+        </div>
+      
       </div>
-      </Modal.Body>
-      <Modal.Footer>
-        {/* <Button variant="secondary" onClick={handleClose}>
-          Close
-        </Button> */}
-      </Modal.Footer>
+     </div>
     </Modal>
   );
 }

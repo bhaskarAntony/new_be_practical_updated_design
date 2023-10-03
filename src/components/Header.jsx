@@ -45,24 +45,25 @@ function Header() {
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            About Us <i class="bi bi-caret-down-fill"></i>
+            Events<i class="bi bi-caret-down-fill"></i>
           </a>
-          <ul class="dropdown-menu list-group">
-            <li className='list-group-item'><a class="dropdown-item" href="#">Why Be Practical?</a></li>
-            <li className='list-group-item'><a class="dropdown-item" href="/contacts">Contact Us</a></li>
+          <ul class="dropdown-menu">
+            <li className='list-group-item'><a class="dropdown-item" href="/gallery">Gallery</a></li>
+            <li className='list-group-item'><a class="dropdown-item" href="/blogs">Blogs</a></li>     
+            <li className='list-group-item'><a class="dropdown-item" href="/events">Events</a></li>   
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href='/events'>Events</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href='/gallery'>Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link">Blogs</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link  elite-link" href='/elite' > <i class="bi bi-stars"></i> Elite</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About Us <i class="bi bi-caret-down-fill"></i>
+          </a>
+          <ul class="dropdown-menu list-group">
+            <li className='list-group-item'><a class="dropdown-item" href="/about">Why Be Practical?</a></li>
+            <li className='list-group-item'><a class="dropdown-item" href="/contacts">Contact Us</a></li>
+          </ul>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

@@ -48,7 +48,7 @@ function Home() {
   }, []);
 
   // Model open logic
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(true);
 
   const handleCloseModal = () => setShowModal(false);
 

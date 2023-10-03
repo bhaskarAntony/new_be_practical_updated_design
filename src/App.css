@@ -67,3 +67,34 @@
         font-size: 1em !important;
     }
 }
+.dialog-modal{
+    background-color: var(--main-color);
+}
+.modal-form .form-control{
+    padding: 15px;
+    font-size: 1.2em;
+}
+.modal-form .form-label{
+    color: #fff;
+}
+.register-icons{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+.register-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    border: 2px solid #fff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-close{
+    background-color: #05595B !important;
+    border-radius: 100px !important;
+    opacity: 1 !important;
+}

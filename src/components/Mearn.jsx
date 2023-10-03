@@ -122,7 +122,7 @@ function Mearn() {
                         <h1 className="course-header" data-aos="fade-up"><span className='text-warning'>HELLO,</span> Devoloper</h1>
                         <h1 className='course-header-2'>START YOUR JOURNY WITH</h1>
                         <h1 className="course-header text-warning" data-aos="fade-up">MERN</h1>
-                        <button className="btn p-3 rounded-5 bg-warning text-black fw-bold m-2">DOWNLOAD BROWCHER</button>
+                        <button className="btn p-3 rounded- bg-warning text-black fw-bold m-2">DOWNLOAD BROWCHER</button>
                         <button className="btn p-3 rounded-5 bg-warning text-black fw-bold m-2">ENROLL NOW</button>
                         {/* <div className="batch"> 
                         <i class="bi bi-calendar3 fs-3"></i>
